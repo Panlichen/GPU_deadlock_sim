@@ -16,7 +16,7 @@ PRINT_PARSE_RAW = False
 PRINT_GROUP_CLASS = False
 PRINT_GPU_CLASS = False
 PRINT_MAIN_LOOP = False
-PRINT_DEADLOCK_DETAIL = False
+PRINT_DEADLOCK_DETAIL = True
 
 
 class GPU(ABC):
@@ -145,37 +145,30 @@ class Group(ABC):
 class SingleQueueGroup(Group):
     def __init__(self, group_id, gpus, expected_colls):
         super().__init__(group_id, gpus, expected_colls)
-        self.done_coll_index = -1
+        self.submitted_undone_colls = []
 
         self.reset()
 
     def reset(self):
-        self.done_coll_index = -1
-        for coll_id in self.expected_colls:
-            self.coll_submit_counter[coll_id] = self.gpu_cnt
+        self.submitted_undone_colls = []
 
     def submit(self, gpu_id, coll_id, round_id) -> int:
         # 两个主要工作：检查死锁，更新状态
-        curr_coll_index = self.expected_colls.index(coll_id)
-        
-        # 判断死锁的方法：在expected_coll_list列表中，从确认执行完成的coll的下一个开始，到当前提交的coll为止，如果有未完成的coll，那就说明乱序了，死锁了。
-        # for index in range(self.done_coll_index + 1, curr_coll_index):
-        #     if self.coll_submit_counter[self.expected_colls[index]] > 0:
-        #         return -1
+        self.submitted_undone_colls.append(coll_id)
 
-        # 更简单的判断死锁的方法：done_coll_index必须是当前提交的index的上一个，不允许跨着提交。
-        if self.done_coll_index != curr_coll_index - 1:
+        if len(set(self.submitted_undone_colls)) > 1:  # 并不是所有已提交的coll都相等，死锁，而且不需要等到所有GPU都提交了。
             if PRINT_DEADLOCK_DETAIL:
-                self.print_deadlock_info(curr_coll_index, gpu_id, coll_id, round_id)
+                self.print_deadlock_info(gpu_id, round_id)
             return -1
-        else:
-            self.coll_submit_counter[coll_id] -= 1
-            if self.coll_submit_counter[coll_id] == 0:
-                self.done_coll_index += 1
-            return 0
 
-    def print_deadlock_info(self, curr_coll_index, gpu_id, coll_id, round_id):
-        print(f"!!SingleQueue Deadlock!! Round {round_id}, expected coll: {self.expected_colls[self.done_coll_index + 1]}, GPU {gpu_id} submit coll: {self.expected_colls[curr_coll_index]}({(coll_id)})")
+        if len(self.submitted_undone_colls) == len(self.gpus):
+            # 如果所有GPU都提交了，还没有死锁，那么就可以清空了。
+            self.submitted_undone_colls = []
+        
+        return 0
+
+    def print_deadlock_info(self, gpu_id, round_id):
+        print(f"!!SingleQueue Deadlock!! Round {round_id}, Group {self.group_id} GPU {gpu_id}, {len(self.submitted_undone_colls)} / {len(self.gpus)} current submitted_undone_colls: {self.submitted_undone_colls}")
 
 
 class StreamWithSyncGroup(Group):
@@ -249,6 +242,7 @@ class StreamWithSyncGroup(Group):
                 unsubmitted_colls_of_hang_gpus = unsubmitted_colls_of_hang_gpus.union(
                     self.unsubmitted_colls_from_gpu[hang_gpu_id])
             # 所有hang住的GPU的已提交未执行列表和未提交列表交集不空，则发生死锁
+            # TODO: 目前这样的判断方法事实上是死锁的必要不充分条件，需要“不同的GPU之间存在交集”，要实现的话是要找到一个依赖环。但是要这么实现的话，执行复杂度和开发难度都比较大了。建图方法为：hang GPU的已提交未完成的coll和未提交的coll为顶点，同一个hang GPU的左右两侧的coll（即同一个GPU的已提交未完成的coll和未提交的coll两两之间）都连边，然后各个hang GPU的已提交未完成的coll和其他hang GPU上未提交的==同 id coll==之间连边，这样就建成了一个无向图，然后找环。
             if len(submitted_undone_colls_of_hang_gpus.intersection(unsubmitted_colls_of_hang_gpus)) > 0:
                 ret = -1
                 if PRINT_DEADLOCK_DETAIL:
