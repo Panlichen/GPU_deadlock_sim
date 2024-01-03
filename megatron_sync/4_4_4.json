@@ -1,0 +1,16 @@
+{
+  "total_rounds": 10,
+  "fix_seed": 0,
+  "disorder_prob": 0.001,
+  "sync_prob": 0.001,
+  "model": "StreamWithSync",
+  "grouping_policy": "Megatron",
+  "tp_group_size": 4,
+  "dp_group_size": 4,
+  "pp_group_size": 4,
+  "coll_cnt_per_tp_group": 50,
+  "coll_cnt_per_dp_group": 150,
+
+  "num_process": 32
+}
+  

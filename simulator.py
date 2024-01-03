@@ -1,0 +1,533 @@
+import random
+from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod
+import json
+import argparse
+from multiprocessing import Process, Value, Lock, current_process
+
+# constant str
+SINGLE_MODEL = "Single"
+STREAM_WITH_SYNC_MODEL = "StreamWithSync"
+MEGATRON_GROUPING_POLICY = "Megatron"
+ARBITRARY_GROUPING_POLICY = "Arbitrary"
+
+# print log control
+PRINT_PARSE_RAW = False
+PRINT_GROUP_CLASS = False
+PRINT_GPU_CLASS = False
+PRINT_MAIN_LOOP = False
+PRINT_DEADLOCK_DETAIL = False
+
+
+class GPU(ABC):
+    def __init__(self, gpu_id, group_of_gpu, expect_coll_exec_list, coll_2_group, disorder_prob):
+        self.gpu_id = gpu_id
+        self.group_of_gpu = group_of_gpu
+        self.expect_coll_exec_list = expect_coll_exec_list
+        self.coll_num = len(expect_coll_exec_list)
+        self.disorder_prob = disorder_prob
+        self.coll_2_group = coll_2_group
+
+        self.actual_coll_exec_list = []
+        self.is_hang = False
+        self.submit_counter = 0
+
+        self.reset()
+    
+    def __str__(self):
+        attributes = ", ".join(f"{key}={value}"
+                               if key != 'group_of_gpu' and key != 'coll_2_group' else ""
+                               for key, value in self.__dict__.items())
+        group_info = ", ".join(f"{group.group_id}" for group in self.group_of_gpu)
+        attributes += f", groups: ({group_info})"
+
+        coll_2_group_str = ", ".join(f"{coll_id} -> {self.coll_2_group[coll_id].group_id}" for coll_id in self.coll_2_group)
+        attributes += f", coll_2_group: ({coll_2_group_str})"
+
+        return f"{self.__class__.__name__}({attributes})"
+
+    def reset(self):
+        self.is_hang = False
+        self.submit_counter = 0
+        self.actual_coll_exec_list = self.expect_coll_exec_list.copy()
+
+    def decide_7_submit_coll(self, round_id) -> int:
+               
+        # 决定要执行的coll
+        decided_coll = -1
+        index_in_actual_list = 0
+        while not decided_coll >= 0:
+
+            random_number = random.random()  # Generate a random number between 0 and 1
+            assert index_in_actual_list < len(self.actual_coll_exec_list), f"index_in_actual_list = {index_in_actual_list}, len(self.actual_coll_exec_list) = {len(self.actual_coll_exec_list)}"
+            if index_in_actual_list == len(self.actual_coll_exec_list) -1 or random_number >= self.disorder_prob:
+                # 如果当前已经是最后一个了，或者决定不乱序，选当前coll
+                decided_coll = self.actual_coll_exec_list[index_in_actual_list]
+                self.submit_counter += 1
+            else:
+                # 否则决定乱序，不选当前的
+                index_in_actual_list += 1
+
+        # 拿到要执行的coll后，更新actual_coll_exec_list
+        self.actual_coll_exec_list = self.actual_coll_exec_list[:index_in_actual_list] + self.actual_coll_exec_list[index_in_actual_list+1:]
+
+        # 向group提交coll，返回值：-1死锁，0成功。提交coll不会有hang的情况。
+        ret = self.coll_2_group[decided_coll].submit(self.gpu_id, decided_coll, round_id)
+        assert ret != 1, "提交coll不会导致hang"
+        
+        return ret
+              
+    @abstractmethod
+    def step_forward(self, round_id) -> int:
+        pass
+
+class SingleQueueGPU(GPU):
+    def __init__(self, gpu_id, group_of_gpu, expect_coll_exec_list, coll_2_group, disorder_prob):
+        super().__init__(gpu_id, group_of_gpu, expect_coll_exec_list, coll_2_group, disorder_prob)
+
+    def step_forward(self, round_id) -> int:
+        return self.decide_7_submit_coll(round_id)
+
+
+class StreamWithSyncGPU(GPU):
+    def __init__(self, gpu_id, group_of_gpu, expect_coll_exec_list, coll_2_group, disorder_prob, sync_prob):
+        super().__init__(gpu_id, group_of_gpu, expect_coll_exec_list, coll_2_group, disorder_prob)
+
+        self.sync_prob = sync_prob
+
+    def step_forward(self, round_id) -> int:
+        random_number = random.random()
+        if random_number < self.sync_prob:
+            final_ret = 0
+            for group in self.group_of_gpu:
+                ret= group.submit(self.gpu_id, -1, round_id)
+                if ret == 1:  # 向所有group提交sync操作，submit改变状态，所以需要都循环完，在每个group视角下都处理一遍。
+                    self.is_hang = True
+                    final_ret = 1
+                elif ret == -1:
+                    return -1  # 如果有死锁，直接返回，不用再循环了。
+            return final_ret
+        else:
+            return self.decide_7_submit_coll(round_id)
+
+    def gpu_check_hang(self) -> bool:
+        self.is_hang = False
+        for group in self.group_of_gpu:
+            if group.group_check_hang(self.gpu_id):  # group_check_hang不改变状态，所以可以不全循环完，碰到一个依然hang的就返回。
+                self.is_hang = True
+                break
+        return self.is_hang
+
+
+class Group(ABC):
+    def __init__(self, group_id, gpus, expected_colls):
+        self.group_id = group_id
+        self.gpu_cnt = len(gpus)
+        # 下边这两个使用浅复制就好，并不会被修改。
+        self.gpus = gpus
+        self.expected_colls = expected_colls
+
+        self.coll_submit_counter = {}
+
+    def __str__(self):
+        attributes = ", ".join(f"{key}={value}" for key, value in self.__dict__.items())
+        return f"{self.__class__.__name__}({attributes})"
+
+    @abstractmethod
+    def reset(self):
+        pass
+
+    @abstractmethod
+    def submit(self, gpu_id, coll_id, round_id) -> int:
+        pass
+
+
+class SingleQueueGroup(Group):
+    def __init__(self, group_id, gpus, expected_colls):
+        super().__init__(group_id, gpus, expected_colls)
+        self.done_coll_index = -1
+
+        self.reset()
+
+    def reset(self):
+        self.done_coll_index = -1
+        for coll_id in self.expected_colls:
+            self.coll_submit_counter[coll_id] = self.gpu_cnt
+
+    def submit(self, gpu_id, coll_id, round_id) -> int:
+        # 两个主要工作：检查死锁，更新状态
+        curr_coll_index = self.expected_colls.index(coll_id)
+        
+        # 判断死锁的方法：在expected_coll_list列表中，从确认执行完成的coll的下一个开始，到当前提交的coll为止，如果有未完成的coll，那就说明乱序了，死锁了。
+        # for index in range(self.done_coll_index + 1, curr_coll_index):
+        #     if self.coll_submit_counter[self.expected_colls[index]] > 0:
+        #         return -1
+
+        # 更简单的判断死锁的方法：done_coll_index必须是当前提交的index的上一个，不允许跨着提交。
+        if self.done_coll_index != curr_coll_index - 1:
+            if PRINT_DEADLOCK_DETAIL:
+                self.print_deadlock_info(curr_coll_index, gpu_id, coll_id, round_id)
+            return -1
+        else:
+            self.coll_submit_counter[coll_id] -= 1
+            if self.coll_submit_counter[coll_id] == 0:
+                self.done_coll_index += 1
+            return 0
+
+    def print_deadlock_info(self, curr_coll_index, gpu_id, coll_id, round_id):
+        print(f"!!SingleQueue Deadlock!! Round {round_id}, expected coll: {self.expected_colls[self.done_coll_index + 1]}, GPU {gpu_id} submit coll: {self.expected_colls[curr_coll_index]}({(coll_id)})")
+
+
+class StreamWithSyncGroup(Group):
+    def __init__(self, group_id, gpus, expected_colls):
+        super().__init__(group_id, gpus, expected_colls)
+        self.submitted_undone_colls_in_group = set()
+        self.unsubmitted_colls_from_gpu = {}
+        self.submitted_undone_colls_from_gpu = {}
+        self.hang_gpus = set()
+
+        self.reset()
+
+    def reset(self):
+        self.submitted_undone_colls_in_group = set()
+        self.hang_gpus = set()
+        for gpu_id in self.gpus:
+            self.unsubmitted_colls_from_gpu[gpu_id] = set(self.expected_colls)
+            self.submitted_undone_colls_from_gpu[gpu_id] = set()
+        
+        for coll_id in self.expected_colls:
+            self.coll_submit_counter[coll_id] = self.gpu_cnt
+
+    def group_check_hang(self, gpu_id) -> bool:
+        gpu_submitted_undone_colls = self.submitted_undone_colls_from_gpu[gpu_id]
+        return len(gpu_submitted_undone_colls.
+                   intersection(self.submitted_undone_colls_in_group)) > 0
+
+    def submit(self, gpu_id, coll_id, round_id) -> int:
+        assert not gpu_id in self.hang_gpus, "已经hang的gpu不能提交任何东西"
+
+        ret = 0
+
+        if coll_id >= 0:  # 提交普通coll
+            assert coll_id in self.expected_colls, "提交了错误的coll"
+
+            self.coll_submit_counter[coll_id] -= 1
+
+            if PRINT_MAIN_LOOP:
+                print(f"Round {round_id}, Group {self.group_id} GPU {gpu_id} submit coll {coll_id}, submit_counter: {self.coll_submit_counter[coll_id]}")
+            self.submitted_undone_colls_from_gpu[gpu_id].add(coll_id)
+            self.unsubmitted_colls_from_gpu[gpu_id].remove(coll_id)
+
+            if self.coll_submit_counter[coll_id] > 0:
+                self.submitted_undone_colls_in_group.add(coll_id)
+            else:
+                self.submitted_undone_colls_in_group.remove(coll_id)
+                for gpu_id in self.gpus:
+                    self.submitted_undone_colls_from_gpu[gpu_id].remove(coll_id)
+            
+            # TODO: 考虑最大并行度
+            # if len(self.submitted_undone_colls_from_gpu[gpu_id]) > 50:
+            #     return -1
+
+            new_hang_gpus = set()
+            for hang_gpu_id in self.hang_gpus:
+                if self.group_check_hang(hang_gpu_id):
+                    new_hang_gpus.add(hang_gpu_id)
+            self.hang_gpus = new_hang_gpus
+
+        else:  # 提交sync
+            if self.group_check_hang(gpu_id):  # 判断hang
+                ret = 1
+                self.hang_gpus.add(gpu_id)
+
+            # 判断死锁：
+            submitted_undone_colls_of_hang_gpus = set()
+            unsubmitted_colls_of_hang_gpus = set()
+            for hang_gpu_id in self.hang_gpus:
+                submitted_undone_colls_of_hang_gpus = submitted_undone_colls_of_hang_gpus.union(
+                    self.submitted_undone_colls_from_gpu[hang_gpu_id])
+                unsubmitted_colls_of_hang_gpus = unsubmitted_colls_of_hang_gpus.union(
+                    self.unsubmitted_colls_from_gpu[hang_gpu_id])
+            # 所有hang住的GPU的已提交未执行列表和未提交列表交集不空，则发生死锁
+            if len(submitted_undone_colls_of_hang_gpus.intersection(unsubmitted_colls_of_hang_gpus)) > 0:
+                ret = -1
+                if PRINT_DEADLOCK_DETAIL:
+                    self.print_deadlock_info(round_id)
+
+        return ret
+            
+    def print_deadlock_info(self, round_id):
+        print(f"!!StreamWithSync Deadlock!! Round {round_id}, hang gpus: {self.hang_gpus}")
+        for hang_gpu_id in self.hang_gpus:
+            print(f"hang gpu {hang_gpu_id} has submitted undone colls: {self.submitted_undone_colls_from_gpu[hang_gpu_id]}")
+            print(f"hang gpu {hang_gpu_id} has unsubmitted colls: {self.unsubmitted_colls_from_gpu[hang_gpu_id]}")
+
+
+def parse_config(config):
+
+    fix_seed = config['fix_seed']
+    if fix_seed == 1:
+        random.seed(2023)  # 42：这是一个在科技和编程文化中非常流行的数字，源自道格拉斯·亚当斯的科幻小说《银河系漫游指南》，其中它被描绘为“生命、宇宙以及任何事物的终极答案”。
+
+    total_rounds = config['total_rounds']
+    disorder_prob = config['disorder_prob']
+    sync_prob = config['sync_prob']
+    model = config['model']
+    grouping_policy = config['grouping_policy']
+
+    if grouping_policy == MEGATRON_GROUPING_POLICY:
+        tp_group_size = config['tp_group_size']
+        dp_group_size = config['dp_group_size']
+        pp_group_size = config['pp_group_size']
+
+        gpu_num = tp_group_size * dp_group_size * pp_group_size
+
+        group_num = (tp_group_size + dp_group_size) * pp_group_size
+
+        coll_cnt_per_tp_group = config['coll_cnt_per_tp_group']
+        coll_cnt_per_dp_group = config['coll_cnt_per_dp_group']
+        # 这里是一个简化的实现。
+        # 一个PP组内有dp_group_size个TP组，各个TP组对模型的切分方法是一样的，==所以各个TP组的coll数目是一致的==。
+        # 一个PP组内有tp_group_size个DP组，各个DP组是对模型不同部分的参数进行梯度聚合，==所以各个DP组的coll数目可能不一致==
+        # 不同PP组之间，TP组的coll数目会不同，DP组coll数目更会不同
+        # 完整的配置应该是长度为pp_group_size的列表，里边包含一个字典：
+            # coll_cnt_per_tp_group对应一个数字
+            # coll_cnt_per_dp_group是一个长度为tp_group_size的列表
+        
+        if PRINT_PARSE_RAW:
+            print(f"MEGATRON_GROUPING_POLICY: tp_group_size = {tp_group_size}, dp_group_size = {dp_group_size}, pp_group_size = {pp_group_size}, coll_cnt_per_tp_group = {coll_cnt_per_tp_group}, coll_cnt_per_dp_group = {coll_cnt_per_dp_group}")
+
+        gpu_per_group = []
+        coll_per_group = []
+        curr_gpu_id = 0
+        curr_coll_id = 0
+        # 分配tp group、dp group的gpu和coll。一个pp group里有tp_group_size * dp_group_size个GPU，dp_group_size(即tp group的个数) * coll_cnt_per_tp_group + tp_group_size(即dp group的个数) * coll_cnt_per_dp_group 个coll。
+        for pp_group_id in range(pp_group_size):
+            if PRINT_PARSE_RAW:
+                print(f"pp group {pp_group_id}")
+            tp_groups = []
+
+            for tp_group_id in range(dp_group_size):  # dp_group_size(即tp group的个数)
+                group_id = (dp_group_size + tp_group_size) * pp_group_id + tp_group_id
+                # 分配GPU
+                new_tp_group = [curr_gpu_id + i for i in range(tp_group_size)]
+                gpu_per_group.append(new_tp_group)
+                curr_gpu_id += tp_group_size
+                tp_groups.append(new_tp_group)
+                
+                # 分配coll
+                coll_per_group.append([curr_coll_id + i for i in range(coll_cnt_per_tp_group)])
+                curr_coll_id += coll_cnt_per_tp_group
+
+                if PRINT_PARSE_RAW:
+                    print(f"TP group id: {group_id}, has gpus: {gpu_per_group[group_id]}, colls: {coll_per_group[group_id]}")
+                
+            dp_groups = list(map(list, zip(*tp_groups)))  # 实现了矩阵转置
+
+            for dp_group_id in range(tp_group_size):  # tp_group_size(即dp group的个数)
+                group_id = (dp_group_size + tp_group_size) * pp_group_id + dp_group_size + dp_group_id
+                # 分配GPU，不分配新GPU了，而是从前边分配的TP group里边取，同一个pp group里的所有tp group的第dp_group_id个gpu组成dp group。
+                gpu_per_group.append(dp_groups[dp_group_id])
+
+                # 分配coll
+                coll_per_group.append([curr_coll_id + i for i in range(coll_cnt_per_dp_group)])
+                curr_coll_id += coll_cnt_per_dp_group
+            
+                if PRINT_PARSE_RAW:
+                    print(f"DP group id: {group_id}, has gpus: {gpu_per_group[group_id]}, colls: {coll_per_group[group_id]}")
+
+    elif grouping_policy == ARBITRARY_GROUPING_POLICY:
+        gpu_num = config['gpu_num']
+        group_num = config['group_num']
+        gpu_per_group = config['gpu_per_group']
+
+        assert len(gpu_per_group) == group_num, "Number of gpu_per_group mismatch!"
+
+        gpu_union = set()
+        max_gpu_id = -1
+        for gpu_list in gpu_per_group:
+            gpu_union = gpu_union.union(set(gpu_list))
+            max_gpu_id = max_gpu_id if max_gpu_id >= max(gpu_list) else max(gpu_list)
+        if PRINT_PARSE_RAW:
+            print(f"gpu_union: {gpu_union}, gpu_num: {gpu_num}, max_gpu_id: {max_gpu_id}")
+        assert len(gpu_union) == gpu_num, "GPU数目与分组不匹配"
+        assert max_gpu_id == gpu_num - 1, "GPU ID 分配不合理"
+
+        coll_cnt_per_group = config['coll_cnt_per_group']
+        if PRINT_PARSE_RAW:
+            print(f"ARBITRARY_GROUPING_POLICY: coll_cnt_per_group = {coll_cnt_per_group}")
+        assert len(coll_cnt_per_group) == group_num, "Coll allocation and Number of gpu_per_group mismatch!"
+        coll_per_group = []
+        curr_coll_id = 0
+        for group_id in range(group_num):
+            coll_per_group.append([curr_coll_id + i for i in range(coll_cnt_per_group[group_id])])
+            curr_coll_id += coll_cnt_per_group[group_id]
+            if PRINT_PARSE_RAW:
+                print(f"Group id: {group_id}, has gpus: {gpu_per_group[group_id]}, colls: {coll_per_group[group_id]}")
+
+    coll_num = sum(len(row) for row in coll_per_group)
+
+    # 建立从coll到group的倒排索引，在这里统一做的好处是不同的group的coll不会重叠。
+    coll_2_group_id = {}
+    for group_id in range(group_num):
+        for coll_id in coll_per_group[group_id]:
+            coll_2_group_id[coll_id] = group_id
+
+    return total_rounds, gpu_num, group_num, coll_num, disorder_prob, sync_prob, model, grouping_policy, gpu_per_group, coll_per_group, coll_2_group_id
+
+
+def dispatch_coll_2_gpu(gpu_per_group, coll_per_group):
+    coll_per_gpu = {}
+
+    assert len(gpu_per_group) == len(coll_per_group), "这咋能不一样"
+    for group_id in range(len(gpu_per_group)):
+        gpu_list = gpu_per_group[group_id]
+        coll_list = coll_per_group[group_id]
+        for gpu_id in gpu_list:
+            coll_per_gpu.setdefault(gpu_id, []).extend(coll_list)
+    
+    if PRINT_PARSE_RAW:
+        for gpu_id in coll_per_gpu:
+            print(f"gpu {gpu_id} has colls: {coll_per_gpu[gpu_id]}")
+    
+    return coll_per_gpu
+
+
+def get_groups_of_gpus(gpu_per_group):
+    group_ids_of_gpus = {}
+    for group_id in range(len(gpu_per_group)):
+        gpu_list = gpu_per_group[group_id]
+        for gpu_id in gpu_list:
+            group_ids_of_gpus.setdefault(gpu_id, []).append(group_id)
+    return group_ids_of_gpus
+
+
+def all_gpu_submit_done(gpus):
+    for gpu in gpus:
+        if gpu.submit_counter < gpu.coll_num:
+            return False
+    return True
+
+
+def main_loop(gpus, groups, total_rounds, sum_deadlock_rounds, lock):
+    deadlock_counter = 0
+    for round_id in range(total_rounds):
+        if PRINT_MAIN_LOOP:
+            print(f"Round {round_id}")
+        for gpu in gpus:
+            gpu.reset()
+        for group in groups: 
+            group.reset()
+
+        # 判定一个round结束，要么发生死锁，要么所有GPU都提交完了。
+        # 提交完的标准是 gpu.submit_counter == gpu.coll_num
+        while not all_gpu_submit_done(gpus):
+            # 每个GPU提交一个coll
+            encounter_deadlock = False
+            for gpu in gpus:
+                if gpu.is_hang:
+                    assert isinstance(gpu, StreamWithSyncGPU), "hang的GPU必须是StreamWithSyncGPU"
+                    if gpu.gpu_check_hang():
+                        continue
+                if gpu.submit_counter == gpu.coll_num: # 这个GPU已经提交完了，跳过
+                    continue
+                if PRINT_MAIN_LOOP:
+                    print(f"Round {round_id} GPU {gpu.gpu_id} submit coll")
+                ret = gpu.step_forward(round_id)
+                if ret == -1:
+                    deadlock_counter += 1
+                    encounter_deadlock = True
+                    if PRINT_DEADLOCK_DETAIL:
+                        print(f"Deadlock! Round {round_id}, GPU {gpu.gpu_id}")
+                    break
+            if encounter_deadlock:
+                break
+    
+    with lock:
+        sum_deadlock_rounds.value += deadlock_counter
+    proc = current_process()
+
+    print(f"~~~Process {proc.pid} #Deadlock round: {deadlock_counter} out of {total_rounds} rounds, ratio: {deadlock_counter / total_rounds}")
+
+
+def init_7_main_loop(config, sum_deadlock_rounds, lock):
+
+    total_rounds, gpu_num, group_num, coll_num, disorder_prob, sync_prob, model, grouping_policy, gpu_per_group, coll_per_group, coll_2_group_id = parse_config(config)
+
+    coll_per_gpu = dispatch_coll_2_gpu(gpu_per_group, coll_per_group)
+
+    group_ids_of_gpus = get_groups_of_gpus(gpu_per_group)
+
+    # 初始化Group，主要利用gpu_per_group和coll_per_group
+    if model == SINGLE_MODEL:
+        groups = [SingleQueueGroup(group_id, gpu_per_group[group_id], coll_per_group[group_id]) for group_id in range(group_num)]
+    elif model == STREAM_WITH_SYNC_MODEL:
+        groups = [StreamWithSyncGroup(group_id, gpu_per_group[group_id], coll_per_group[group_id]) for group_id in range(group_num)]
+
+    if PRINT_GROUP_CLASS:
+        for group in groups:
+            print(group)
+
+    coll_2_group = {}
+    for coll_id in coll_2_group_id:
+        coll_2_group[coll_id] = groups[coll_2_group_id[coll_id]]
+    
+    # 初始化GPU，主要利用coll_per_gpu和groups
+    if model == SINGLE_MODEL:
+        gpus = [SingleQueueGPU(
+            gpu_id,
+            [groups[group_id] for group_id in group_ids_of_gpus[gpu_id]],
+            coll_per_gpu[gpu_id],
+            coll_2_group,
+            disorder_prob,
+        ) for gpu_id in range(gpu_num)]
+    elif model == STREAM_WITH_SYNC_MODEL:
+        gpus = [StreamWithSyncGPU(
+            gpu_id,
+            [groups[group_id] for group_id in group_ids_of_gpus[gpu_id]],
+            coll_per_gpu[gpu_id],
+            coll_2_group,
+            disorder_prob,
+            sync_prob,
+        ) for gpu_id in range(gpu_num)]
+
+    if PRINT_GPU_CLASS:
+        for gpu in gpus:
+            print(gpu)
+
+    proc = current_process()
+    print(f"Process {proc.pid} before main loop")
+
+    main_loop(gpus, groups, total_rounds, sum_deadlock_rounds, lock)
+    
+    print(f"Process {proc.pid} model: {model}, gropuing_policy: {grouping_policy} gpu_num: {gpu_num}, group_num: {group_num}, coll_num: {coll_num}, disorder_prob: {disorder_prob}, sync_prob: {sync_prob}")
+    if grouping_policy == MEGATRON_GROUPING_POLICY:
+        print(f"tp_group_size: {config['tp_group_size']}, dp_group_size: {config['dp_group_size']}, pp_group_size: {config['pp_group_size']}, coll_cnt_per_tp_group: {config['coll_cnt_per_tp_group']}, coll_cnt_per_dp_group: {config['coll_cnt_per_dp_group']}")
+
+
+if __name__ == "__main__":
+    print("\n\n================\nStart\n================\n\n")
+
+    parser = argparse.ArgumentParser(description='GPU deadlock simulator.')
+    parser.add_argument('-f', '--file', required=True, help='Path to the configuration file.')
+    args = parser.parse_args()
+    
+    with open(args.file, 'r') as file:
+        config = json.load(file)
+
+    sum_deadlock_rounds = Value('i', 0)  # 类型代码（如 'i' 表示整数）
+    lock = Lock()
+
+    num_processes = config["num_process"]
+    total_rounds = config['total_rounds']
+
+    processes = [Process(target=init_7_main_loop, args=(config, sum_deadlock_rounds, lock)) for _ in range(num_processes)]
+    
+    for p in processes:
+        p.start()
+
+    # 等待所有进程完成
+    for p in processes:
+        p.join()
+
+    print(f"\n================\nSummary: #Deadlock round: {sum_deadlock_rounds.value} out of {total_rounds * num_processes} rounds, ratio: {sum_deadlock_rounds.value / (total_rounds * num_processes)}")
