@@ -519,6 +519,9 @@ if __name__ == "__main__":
     
     for p in processes:
         p.start()
+        print(p.pid)
+
+    print(f"start {num_processes} processes, each {total_rounds} rounds\n\n")
 
     # 等待所有进程完成
     for p in processes:
