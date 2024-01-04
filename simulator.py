@@ -17,6 +17,8 @@ PRINT_GROUP_CLASS = False
 PRINT_GPU_CLASS = False
 PRINT_MAIN_LOOP = False
 PRINT_DEADLOCK_DETAIL = False
+PRINT_ROUND_REPORT = True
+PRINT_PARSE_AT_BEGIN = True
 
 
 class GPU(ABC):
@@ -436,17 +438,27 @@ def main_loop(gpus, groups, total_rounds, sum_deadlock_rounds, lock):
                     break
             if encounter_deadlock:
                 break
+        
+        if PRINT_ROUND_REPORT:
+            print(f"currently #Deadlock round: {deadlock_counter} out of {round_id + 1} rounds, ratio: {deadlock_counter / (round_id + 1)}", flush=True)
     
     with lock:
         sum_deadlock_rounds.value += deadlock_counter
     proc = current_process()
 
-    print(f"~~~Process {proc.pid} #Deadlock round: {deadlock_counter} out of {total_rounds} rounds, ratio: {deadlock_counter / total_rounds}")
+    print(f"\n\n~~~Process {proc.pid} #Deadlock round: {deadlock_counter} out of {total_rounds} rounds, ratio: {deadlock_counter / total_rounds}")
 
 
 def init_7_main_loop(config, sum_deadlock_rounds, lock):
 
     total_rounds, gpu_num, group_num, coll_num, disorder_prob, sync_prob, model, grouping_policy, gpu_per_group, coll_per_group, coll_2_group_id = parse_config(config)
+    
+    proc = current_process()
+
+    if PRINT_PARSE_AT_BEGIN:
+        print(f"Process {proc.pid} model: {model}, gropuing_policy: {grouping_policy} gpu_num: {gpu_num}, group_num: {group_num}, coll_num: {coll_num}, disorder_prob: {disorder_prob}, sync_prob: {sync_prob}")
+        if grouping_policy == MEGATRON_GROUPING_POLICY:
+            print(f"tp_group_size: {config['tp_group_size']}, dp_group_size: {config['dp_group_size']}, pp_group_size: {config['pp_group_size']}, coll_cnt_per_tp_group: {config['coll_cnt_per_tp_group']}, coll_cnt_per_dp_group: {config['coll_cnt_per_dp_group']}", flush=True)
 
     coll_per_gpu = dispatch_coll_2_gpu(gpu_per_group, coll_per_group)
 
@@ -489,8 +501,7 @@ def init_7_main_loop(config, sum_deadlock_rounds, lock):
         for gpu in gpus:
             print(gpu)
 
-    proc = current_process()
-    print(f"Process {proc.pid} before main loop")
+    print(f"Process {proc.pid} before main loop", flush=True)
 
     main_loop(gpus, groups, total_rounds, sum_deadlock_rounds, lock)
     
