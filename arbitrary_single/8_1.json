@@ -2,7 +2,7 @@
   "total_rounds": 500,
   "fix_seed": 0,
   "gpu_num": 8,
-  "disorder_prob": 0.0001,
+  "disorder_prob": 0.001,
   "sync_prob": 0.01,
   "model": "Single",
   "grouping_policy": "Arbitrary",
@@ -11,7 +11,7 @@
     [0, 1, 2, 3, 4, 5, 6, 7]
   ],
   "coll_cnt_per_group": [
-    500
+    161
   ],
 
   "num_process": 32
