@@ -1,7 +1,7 @@
 {
   "total_rounds": 20,
   "fix_seed": 0,
-  "disorder_prob": 0.000001,
+  "disorder_prob": 0.0000001,
   "sync_prob": 0.001,
   "model": "Single",
   "grouping_policy": "Megatron",

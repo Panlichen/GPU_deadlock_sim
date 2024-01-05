@@ -346,7 +346,7 @@ def parse_config(config):
             max_gpu_id = max_gpu_id if max_gpu_id >= max(gpu_list) else max(gpu_list)
         if PRINT_PARSE_RAW:
             print(f"gpu_union: {gpu_union}, gpu_num: {gpu_num}, max_gpu_id: {max_gpu_id}")
-        assert len(gpu_union) == gpu_num, "GPU数目与分组不匹配"
+        assert len(gpu_union) == gpu_num, f"GPU数目与分组不匹配，gpu_union: {gpu_union}, len(gpu_union): {len(gpu_union)}, gpu_num: {gpu_num}, max_gpu_id: {max_gpu_id}"
         assert max_gpu_id == gpu_num - 1, "GPU ID 分配不合理"
 
         coll_cnt_per_group = config['coll_cnt_per_group']
