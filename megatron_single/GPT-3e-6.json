@@ -1,0 +1,16 @@
+{
+  "total_rounds": 20,
+  "fix_seed": 0,
+  "disorder_prob": 0.000001,
+  "sync_prob": 0.001,
+  "model": "Single",
+  "grouping_policy": "Megatron",
+  "tp_group_size": 8,
+  "dp_group_size": 6,
+  "pp_group_size": 64,
+  "coll_cnt_per_tp_group": 400,
+  "coll_cnt_per_dp_group": 1200,
+
+  "num_process": 32
+}
+  

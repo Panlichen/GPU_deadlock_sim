@@ -1,0 +1,18 @@
+{
+  "total_rounds": 500,
+  "fix_seed": 0,
+  "gpu_num": 8,
+  "disorder_prob": 0.0000001,
+  "sync_prob": 0.01,
+  "model": "Single",
+  "grouping_policy": "Arbitrary",
+  "group_num": 1,
+  "gpu_per_group": [
+    [0, 1, 2, 3, 4, 5, 6, 7]
+  ],
+  "coll_cnt_per_group": [
+    161
+  ],
+
+  "num_process": 32
+}
