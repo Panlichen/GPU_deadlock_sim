@@ -1,8 +1,8 @@
 {
-  "total_rounds": 1000,
+  "total_rounds": 500,
   "fix_seed": 0,
   "gpu_num": 8,
-  "disorder_prob": 0.00000001,
+  "disorder_prob": 0.001,
   "sync_prob": 0.01,
   "model": "Single",
   "grouping_policy": "Arbitrary",

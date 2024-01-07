@@ -53,7 +53,7 @@ class GPU(ABC):
         self.submit_counter = 0
         self.actual_coll_exec_list = self.expect_coll_exec_list.copy()
 
-    def decide_7_submit_coll(self, round_id) -> int:
+    def decide_coll(self, round_id) -> int:  # 为了适应single的需求，改为返回决定的coll_id
                
         # 决定要执行的coll
         decided_coll = -1
@@ -73,11 +73,7 @@ class GPU(ABC):
         # 拿到要执行的coll后，更新actual_coll_exec_list
         self.actual_coll_exec_list = self.actual_coll_exec_list[:index_in_actual_list] + self.actual_coll_exec_list[index_in_actual_list+1:]
 
-        # 向group提交coll，返回值：-1死锁，0成功。提交coll不会有hang的情况。
-        ret = self.coll_2_group[decided_coll].submit(self.gpu_id, decided_coll, round_id)
-        assert ret != 1, "提交coll不会导致hang"
-        
-        return ret
+        return decided_coll
               
     @abstractmethod
     def step_forward(self, round_id) -> int:
@@ -88,7 +84,18 @@ class SingleQueueGPU(GPU):
         super().__init__(gpu_id, group_of_gpu, expect_coll_exec_list, coll_2_group, disorder_prob)
 
     def step_forward(self, round_id) -> int:
-        return self.decide_7_submit_coll(round_id)
+        # bugfix: 这里不能直接发，需要和group交互一下，看看自己能不能发，能发的前提是自己刚刚提交的coll已经执行了，执行的前提是所有这个group的GPU都提交了。
+        # 所以在group里要设计一个list，标记已经提交的GPU，这个GPU可以提交的条件是，自己不在group的list中。
+        # 这还比较麻烦。。。因为这时候GPU还不知道自己要提交哪个coll，也就不知道自己要向那个group询问自己能不能提交。
+        
+        decided_coll = self.decide_coll(round_id)
+
+        if self.coll_2_group[decided_coll].gpu_can_submit(self.gpu_id):
+            # 向group提交coll，返回值：-1死锁，0成功。提交coll不会有hang的情况。
+            ret = self.coll_2_group[decided_coll].submit(self.gpu_id, decided_coll, round_id)
+            assert ret != 1, "提交coll不会导致hang"
+            
+            return ret
 
 
 class StreamWithSyncGPU(GPU):
@@ -110,7 +117,13 @@ class StreamWithSyncGPU(GPU):
                     return -1  # 如果有死锁，直接返回，不用再循环了。
             return final_ret
         else:
-            return self.decide_7_submit_coll(round_id)
+            decided_coll = self.decide_coll(round_id)
+        
+            # 向group提交coll，返回值：-1死锁，0成功。提交coll不会有hang的情况。
+            ret = self.coll_2_group[decided_coll].submit(self.gpu_id, decided_coll, round_id)
+            assert ret != 1, "提交coll不会导致hang"
+            
+            return ret
 
     def gpu_check_hang(self) -> bool:
         self.is_hang = False
@@ -148,15 +161,24 @@ class SingleQueueGroup(Group):
     def __init__(self, group_id, gpus, expected_colls):
         super().__init__(group_id, gpus, expected_colls)
         self.submitted_undone_colls = []
+        self.current_submitted_gpus = []
 
         self.reset()
 
     def reset(self):
         self.submitted_undone_colls = []
+        self.current_submitted_gpus = []
+
+    def gpu_can_submit(self, gpu_id) -> bool:
+        return not gpu_id in self.current_submitted_gpus
 
     def submit(self, gpu_id, coll_id, round_id) -> int:
         # 两个主要工作：检查死锁，更新状态
         self.submitted_undone_colls.append(coll_id)
+        self.current_submitted_gpus.append(gpu_id)
+        
+        if PRINT_MAIN_LOOP:
+            print(f"Round {round_id}, Group {self.group_id} GPU {gpu_id} submit coll {coll_id}, self.submitted_undone_colls: {self.submitted_undone_colls}")
 
         if len(set(self.submitted_undone_colls)) > 1:  # 并不是所有已提交的coll都相等，死锁，而且不需要等到所有GPU都提交了。
             if PRINT_DEADLOCK_DETAIL:
@@ -166,6 +188,7 @@ class SingleQueueGroup(Group):
         if len(self.submitted_undone_colls) == len(self.gpus):
             # 如果所有GPU都提交了，还没有死锁，那么就可以清空了。
             self.submitted_undone_colls = []
+            self.current_submitted_gpus = []
         
         return 0
 
@@ -346,7 +369,7 @@ def parse_config(config):
             max_gpu_id = max_gpu_id if max_gpu_id >= max(gpu_list) else max(gpu_list)
         if PRINT_PARSE_RAW:
             print(f"gpu_union: {gpu_union}, gpu_num: {gpu_num}, max_gpu_id: {max_gpu_id}")
-        assert len(gpu_union) == gpu_num, "GPU数目与分组不匹配"
+        assert len(gpu_union) == gpu_num, f"GPU数目与分组不匹配，gpu_union: {gpu_union}, len(gpu_union): {len(gpu_union)}, gpu_num: {gpu_num}, max_gpu_id: {max_gpu_id}"
         assert max_gpu_id == gpu_num - 1, "GPU ID 分配不合理"
 
         coll_cnt_per_group = config['coll_cnt_per_group']

@@ -1,5 +1,5 @@
 {
-  "total_rounds": 100,
+  "total_rounds": 1000,
   "fix_seed": 0,
   "disorder_prob": 0.0000001,
   "sync_prob": 0.3,
