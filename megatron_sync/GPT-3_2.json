@@ -1,5 +1,5 @@
 {
-  "total_rounds": 10,
+  "total_rounds": 1,
   "fix_seed": 0,
   "disorder_prob": 0.0001,
   "sync_prob": 0.0001,
@@ -11,6 +11,6 @@
   "coll_cnt_per_tp_group": 3600,
   "coll_cnt_per_dp_group": 10800,
 
-  "num_process": 32
+  "num_process": 200
 }
   
