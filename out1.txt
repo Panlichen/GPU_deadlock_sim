@@ -1,0 +1,102 @@
+
+
+================
+Start
+================
+
+
+753
+754
+755
+756
+757
+758
+759
+760
+761
+762
+763
+764
+765
+766
+767
+768
+769
+770
+771
+772
+773
+774
+775
+776
+777
+778
+779
+780
+781
+782
+783
+Process 774 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 775 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 762 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 768 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 765 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 778 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 753 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 779 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 763 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 767 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 760 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 761 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 769 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 766 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 773 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 754 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 772 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 757 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 755 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 781 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 783 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 777 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 770 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 771 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 782 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 759 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 758 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 776 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 764 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 756 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 780 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800
+Process 784 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 6912000, disorder_prob: 0.0001, sync_prob: 0.0001
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 3600, coll_cnt_per_dp_group: 10800

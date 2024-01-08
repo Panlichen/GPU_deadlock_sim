@@ -1,0 +1,614 @@
+
+
+================
+Start
+================
+
+
+16108
+16109
+16116
+16120
+16125
+16132
+16135
+16141
+16144
+16150
+16154
+Process 16125 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16125 before main loop
+16158
+16159
+16160
+16170
+16172
+Process 16108 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16108 before main loop
+Process 16116 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16116 before main loop
+16173
+16184
+16185
+16186
+Process 16132 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16132 before main loop
+Process 16109 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16109 before main loop
+Process 16120 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16120 before main loop
+16190
+16191
+16192
+16193
+Process 16144 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16144 before main loop
+16195
+16196
+Process 16154 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16154 before main loop
+Process 16135 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16135 before main loop
+Process 16141 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16141 before main loop
+Process 16150 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16150 before main loop
+16219
+16223
+16225
+16237
+16238
+Process 16160 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16160 before main loop
+Process 16158 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16158 before main loop
+Process 16159 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16159 before main loop
+Process 16192 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16192 before main loop
+Process 16193 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16193 before main loop
+Process 16170 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16170 before main loop
+Process 16190 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16190 before main loop
+Process 16173 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16173 before main loop
+Process 16186 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16186 before main loop
+Process 16172 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16172 before main loop
+Process 16184 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16184 before main loop
+Process 16185 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16185 before main loop
+Process 16191 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16191 before main loop
+Process 16195 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16195 before main loop
+Process 16196 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16196 before main loop
+Process 16225 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16225 before main loop
+Process 16223 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16223 before main loop
+Process 16241 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16241 before main loop
+Process 16237 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16237 before main loop
+Process 16219 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16219 before main loop
+Process 16238 model: Single, gropuing_policy: Arbitrary gpu_num: 128, group_num: 32, coll_num: 25600, disorder_prob: 1e-05, sync_prob: 0.1
+Process 16238 before main loop
+currently #Deadlock round: 1 out of 1 rounds, ratio: 1.0
+currently #Deadlock round: 1 out of 1 rounds, ratio: 1.0
+currently #Deadlock round: 1 out of 1 rounds, ratio: 1.0
+currently #Deadlock round: 1 out of 1 rounds, ratio: 1.0
+currently #Deadlock round: 1 out of 1 rounds, ratio: 1.0
+currently #Deadlock round: 2 out of 2 rounds, ratio: 1.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 2 out of 2 rounds, ratio: 1.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 2 rounds, ratio: 0.5
+currently #Deadlock round: 1 out of 2 rounds, ratio: 0.5
+currently #Deadlock round: 1 out of 2 rounds, ratio: 0.5
+currently #Deadlock round: 1 out of 2 rounds, ratio: 0.5
+currently #Deadlock round: 1 out of 2 rounds, ratio: 0.5
+currently #Deadlock round: 1 out of 2 rounds, ratio: 0.5
+currently #Deadlock round: 1 out of 2 rounds, ratio: 0.5
+currently #Deadlock round: 1 out of 2 rounds, ratio: 0.5
+currently #Deadlock round: 2 out of 3 rounds, ratio: 0.6666666666666666
+currently #Deadlock round: 2 out of 3 rounds, ratio: 0.6666666666666666
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 2 out of 3 rounds, ratio: 0.6666666666666666
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 3 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 2 out of 3 rounds, ratio: 0.6666666666666666
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 3 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+currently #Deadlock round: 3 out of 4 rounds, ratio: 0.75
+currently #Deadlock round: 1 out of 3 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 1 out of 3 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 1 out of 3 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 1 out of 3 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 1 out of 3 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 1 out of 3 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 1 out of 3 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 2 out of 4 rounds, ratio: 0.5
+currently #Deadlock round: 2 out of 4 rounds, ratio: 0.5
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 4 rounds, ratio: 0.25
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+currently #Deadlock round: 2 out of 4 rounds, ratio: 0.5
+currently #Deadlock round: 2 out of 4 rounds, ratio: 0.5
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 4 rounds, ratio: 0.25
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+currently #Deadlock round: 2 out of 4 rounds, ratio: 0.5
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 4 rounds, ratio: 0.25
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 4 rounds, ratio: 0.25
+currently #Deadlock round: 3 out of 5 rounds, ratio: 0.6
+currently #Deadlock round: 1 out of 4 rounds, ratio: 0.25
+currently #Deadlock round: 1 out of 4 rounds, ratio: 0.25
+currently #Deadlock round: 1 out of 4 rounds, ratio: 0.25
+currently #Deadlock round: 1 out of 4 rounds, ratio: 0.25
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 4 rounds, ratio: 0.25
+currently #Deadlock round: 2 out of 5 rounds, ratio: 0.4
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+currently #Deadlock round: 2 out of 5 rounds, ratio: 0.4
+currently #Deadlock round: 1 out of 5 rounds, ratio: 0.2
+currently #Deadlock round: 2 out of 5 rounds, ratio: 0.4
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+currently #Deadlock round: 2 out of 5 rounds, ratio: 0.4
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 5 rounds, ratio: 0.2
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 5 rounds, ratio: 0.2
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+currently #Deadlock round: 2 out of 5 rounds, ratio: 0.4
+currently #Deadlock round: 1 out of 5 rounds, ratio: 0.2
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 5 rounds, ratio: 0.2
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 5 rounds, ratio: 0.2
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+currently #Deadlock round: 3 out of 6 rounds, ratio: 0.5
+currently #Deadlock round: 3 out of 6 rounds, ratio: 0.5
+currently #Deadlock round: 1 out of 5 rounds, ratio: 0.2
+currently #Deadlock round: 1 out of 5 rounds, ratio: 0.2
+currently #Deadlock round: 1 out of 5 rounds, ratio: 0.2
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 5 rounds, ratio: 0.2
+currently #Deadlock round: 2 out of 6 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+currently #Deadlock round: 2 out of 6 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+currently #Deadlock round: 2 out of 6 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 5 rounds, ratio: 0.2
+currently #Deadlock round: 1 out of 5 rounds, ratio: 0.2
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+currently #Deadlock round: 2 out of 6 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 3 out of 7 rounds, ratio: 0.42857142857142855
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+currently #Deadlock round: 3 out of 7 rounds, ratio: 0.42857142857142855
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 2 out of 7 rounds, ratio: 0.2857142857142857
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 2 out of 7 rounds, ratio: 0.2857142857142857
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 4 out of 8 rounds, ratio: 0.5
+currently #Deadlock round: 2 out of 7 rounds, ratio: 0.2857142857142857
+currently #Deadlock round: 2 out of 7 rounds, ratio: 0.2857142857142857
+currently #Deadlock round: 3 out of 8 rounds, ratio: 0.375
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+currently #Deadlock round: 2 out of 7 rounds, ratio: 0.2857142857142857
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 2 out of 7 rounds, ratio: 0.2857142857142857
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 3 out of 8 rounds, ratio: 0.375
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+currently #Deadlock round: 2 out of 8 rounds, ratio: 0.25
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 2 out of 8 rounds, ratio: 0.25
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 2 out of 8 rounds, ratio: 0.25
+currently #Deadlock round: 3 out of 9 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 2 out of 8 rounds, ratio: 0.25
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 3 out of 9 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 2 out of 8 rounds, ratio: 0.25
+currently #Deadlock round: 4 out of 9 rounds, ratio: 0.4444444444444444
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+currently #Deadlock round: 2 out of 8 rounds, ratio: 0.25
+currently #Deadlock round: 2 out of 8 rounds, ratio: 0.25
+currently #Deadlock round: 2 out of 8 rounds, ratio: 0.25
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+currently #Deadlock round: 2 out of 8 rounds, ratio: 0.25
+currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+currently #Deadlock round: 3 out of 9 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+currently #Deadlock round: 3 out of 9 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 3 out of 9 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+currently #Deadlock round: 2 out of 8 rounds, ratio: 0.25
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+currently #Deadlock round: 3 out of 10 rounds, ratio: 0.3
+currently #Deadlock round: 2 out of 9 rounds, ratio: 0.2222222222222222
+currently #Deadlock round: 2 out of 9 rounds, ratio: 0.2222222222222222
+currently #Deadlock round: 3 out of 10 rounds, ratio: 0.3
+currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+currently #Deadlock round: 4 out of 10 rounds, ratio: 0.4
+currently #Deadlock round: 2 out of 9 rounds, ratio: 0.2222222222222222
+currently #Deadlock round: 2 out of 9 rounds, ratio: 0.2222222222222222
+currently #Deadlock round: 2 out of 9 rounds, ratio: 0.2222222222222222
+currently #Deadlock round: 4 out of 10 rounds, ratio: 0.4
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+currently #Deadlock round: 1 out of 9 rounds, ratio: 0.1111111111111111
+currently #Deadlock round: 2 out of 9 rounds, ratio: 0.2222222222222222
+currently #Deadlock round: 2 out of 9 rounds, ratio: 0.2222222222222222
+currently #Deadlock round: 2 out of 9 rounds, ratio: 0.2222222222222222
+currently #Deadlock round: 3 out of 10 rounds, ratio: 0.3
+currently #Deadlock round: 2 out of 9 rounds, ratio: 0.2222222222222222
+currently #Deadlock round: 5 out of 11 rounds, ratio: 0.45454545454545453
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+currently #Deadlock round: 3 out of 10 rounds, ratio: 0.3
+currently #Deadlock round: 1 out of 9 rounds, ratio: 0.1111111111111111
+currently #Deadlock round: 1 out of 9 rounds, ratio: 0.1111111111111111
+currently #Deadlock round: 1 out of 9 rounds, ratio: 0.1111111111111111
+currently #Deadlock round: 1 out of 9 rounds, ratio: 0.1111111111111111
+currently #Deadlock round: 1 out of 9 rounds, ratio: 0.1111111111111111
+currently #Deadlock round: 3 out of 10 rounds, ratio: 0.3
+currently #Deadlock round: 1 out of 9 rounds, ratio: 0.1111111111111111
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+currently #Deadlock round: 3 out of 10 rounds, ratio: 0.3
+currently #Deadlock round: 2 out of 9 rounds, ratio: 0.2222222222222222
+currently #Deadlock round: 2 out of 10 rounds, ratio: 0.2
+currently #Deadlock round: 1 out of 9 rounds, ratio: 0.1111111111111111
+currently #Deadlock round: 3 out of 11 rounds, ratio: 0.2727272727272727
+currently #Deadlock round: 1 out of 9 rounds, ratio: 0.1111111111111111
+currently #Deadlock round: 2 out of 10 rounds, ratio: 0.2
+currently #Deadlock round: 3 out of 10 rounds, ratio: 0.3
+currently #Deadlock round: 1 out of 9 rounds, ratio: 0.1111111111111111
+currently #Deadlock round: 3 out of 11 rounds, ratio: 0.2727272727272727
+currently #Deadlock round: 4 out of 11 rounds, ratio: 0.36363636363636365
+currently #Deadlock round: 1 out of 9 rounds, ratio: 0.1111111111111111
+currently #Deadlock round: 2 out of 10 rounds, ratio: 0.2
+currently #Deadlock round: 2 out of 10 rounds, ratio: 0.2
+currently #Deadlock round: 2 out of 10 rounds, ratio: 0.2
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+currently #Deadlock round: 2 out of 10 rounds, ratio: 0.2
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+currently #Deadlock round: 3 out of 11 rounds, ratio: 0.2727272727272727
+currently #Deadlock round: 3 out of 11 rounds, ratio: 0.2727272727272727
+currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+currently #Deadlock round: 5 out of 12 rounds, ratio: 0.4166666666666667
+currently #Deadlock round: 5 out of 12 rounds, ratio: 0.4166666666666667
+currently #Deadlock round: 2 out of 10 rounds, ratio: 0.2
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+currently #Deadlock round: 3 out of 11 rounds, ratio: 0.2727272727272727
+currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+currently #Deadlock round: 2 out of 10 rounds, ratio: 0.2
+currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+currently #Deadlock round: 3 out of 11 rounds, ratio: 0.2727272727272727
+currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+currently #Deadlock round: 3 out of 11 rounds, ratio: 0.2727272727272727
+currently #Deadlock round: 2 out of 11 rounds, ratio: 0.18181818181818182
+currently #Deadlock round: 2 out of 11 rounds, ratio: 0.18181818181818182
+currently #Deadlock round: 3 out of 12 rounds, ratio: 0.25
+currently #Deadlock round: 3 out of 11 rounds, ratio: 0.2727272727272727
+currently #Deadlock round: 2 out of 11 rounds, ratio: 0.18181818181818182
+currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+currently #Deadlock round: 3 out of 11 rounds, ratio: 0.2727272727272727
+currently #Deadlock round: 2 out of 11 rounds, ratio: 0.18181818181818182
+currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+currently #Deadlock round: 3 out of 12 rounds, ratio: 0.25
+currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+currently #Deadlock round: 4 out of 12 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+currently #Deadlock round: 2 out of 11 rounds, ratio: 0.18181818181818182
+currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+currently #Deadlock round: 4 out of 13 rounds, ratio: 0.3076923076923077
+currently #Deadlock round: 2 out of 11 rounds, ratio: 0.18181818181818182
+currently #Deadlock round: 3 out of 12 rounds, ratio: 0.25
+currently #Deadlock round: 1 out of 11 rounds, ratio: 0.09090909090909091
+currently #Deadlock round: 3 out of 12 rounds, ratio: 0.25
+currently #Deadlock round: 5 out of 13 rounds, ratio: 0.38461538461538464
+currently #Deadlock round: 3 out of 12 rounds, ratio: 0.25
+currently #Deadlock round: 5 out of 13 rounds, ratio: 0.38461538461538464
+currently #Deadlock round: 2 out of 11 rounds, ratio: 0.18181818181818182
+currently #Deadlock round: 3 out of 12 rounds, ratio: 0.25
+currently #Deadlock round: 3 out of 12 rounds, ratio: 0.25
+currently #Deadlock round: 1 out of 11 rounds, ratio: 0.09090909090909091
+currently #Deadlock round: 1 out of 11 rounds, ratio: 0.09090909090909091
+currently #Deadlock round: 2 out of 12 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 1 out of 11 rounds, ratio: 0.09090909090909091
+currently #Deadlock round: 2 out of 11 rounds, ratio: 0.18181818181818182
+currently #Deadlock round: 1 out of 11 rounds, ratio: 0.09090909090909091
+currently #Deadlock round: 2 out of 12 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 3 out of 13 rounds, ratio: 0.23076923076923078
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 11 rounds, ratio: 0.09090909090909091
+currently #Deadlock round: 3 out of 12 rounds, ratio: 0.25
+currently #Deadlock round: 3 out of 12 rounds, ratio: 0.25
+currently #Deadlock round: 1 out of 11 rounds, ratio: 0.09090909090909091
+currently #Deadlock round: 1 out of 11 rounds, ratio: 0.09090909090909091
+currently #Deadlock round: 2 out of 12 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 1 out of 11 rounds, ratio: 0.09090909090909091
+currently #Deadlock round: 4 out of 13 rounds, ratio: 0.3076923076923077
+currently #Deadlock round: 1 out of 11 rounds, ratio: 0.09090909090909091
+currently #Deadlock round: 1 out of 11 rounds, ratio: 0.09090909090909091
+currently #Deadlock round: 2 out of 12 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 4 out of 14 rounds, ratio: 0.2857142857142857
+currently #Deadlock round: 3 out of 13 rounds, ratio: 0.23076923076923078
+currently #Deadlock round: 4 out of 14 rounds, ratio: 0.2857142857142857
+currently #Deadlock round: 0 out of 11 rounds, ratio: 0.0
+currently #Deadlock round: 2 out of 12 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 3 out of 13 rounds, ratio: 0.23076923076923078
+currently #Deadlock round: 1 out of 12 rounds, ratio: 0.08333333333333333
+currently #Deadlock round: 3 out of 13 rounds, ratio: 0.23076923076923078
+currently #Deadlock round: 1 out of 12 rounds, ratio: 0.08333333333333333
+currently #Deadlock round: 3 out of 13 rounds, ratio: 0.23076923076923078
+currently #Deadlock round: 2 out of 12 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 5 out of 14 rounds, ratio: 0.35714285714285715
+currently #Deadlock round: 5 out of 14 rounds, ratio: 0.35714285714285715
+currently #Deadlock round: 1 out of 12 rounds, ratio: 0.08333333333333333
+currently #Deadlock round: 3 out of 13 rounds, ratio: 0.23076923076923078
+currently #Deadlock round: 2 out of 13 rounds, ratio: 0.15384615384615385
+currently #Deadlock round: 3 out of 13 rounds, ratio: 0.23076923076923078
+currently #Deadlock round: 1 out of 12 rounds, ratio: 0.08333333333333333
+currently #Deadlock round: 1 out of 12 rounds, ratio: 0.08333333333333333
+currently #Deadlock round: 2 out of 13 rounds, ratio: 0.15384615384615385
+currently #Deadlock round: 1 out of 12 rounds, ratio: 0.08333333333333333
+currently #Deadlock round: 2 out of 12 rounds, ratio: 0.16666666666666666
+currently #Deadlock round: 1 out of 12 rounds, ratio: 0.08333333333333333
+currently #Deadlock round: 0 out of 11 rounds, ratio: 0.0
+currently #Deadlock round: 3 out of 14 rounds, ratio: 0.21428571428571427
+currently #Deadlock round: 3 out of 13 rounds, ratio: 0.23076923076923078
+currently #Deadlock round: 1 out of 12 rounds, ratio: 0.08333333333333333
+currently #Deadlock round: 4 out of 14 rounds, ratio: 0.2857142857142857
+currently #Deadlock round: 1 out of 12 rounds, ratio: 0.08333333333333333
+currently #Deadlock round: 2 out of 13 rounds, ratio: 0.15384615384615385
+currently #Deadlock round: 2 out of 13 rounds, ratio: 0.15384615384615385
+currently #Deadlock round: 4 out of 14 rounds, ratio: 0.2857142857142857
+currently #Deadlock round: 1 out of 12 rounds, ratio: 0.08333333333333333
+currently #Deadlock round: 3 out of 13 rounds, ratio: 0.23076923076923078
+currently #Deadlock round: 1 out of 12 rounds, ratio: 0.08333333333333333
+currently #Deadlock round: 1 out of 12 rounds, ratio: 0.08333333333333333
+currently #Deadlock round: 4 out of 15 rounds, ratio: 0.26666666666666666
+currently #Deadlock round: 3 out of 13 rounds, ratio: 0.23076923076923078
+currently #Deadlock round: 2 out of 13 rounds, ratio: 0.15384615384615385
+currently #Deadlock round: 3 out of 14 rounds, ratio: 0.21428571428571427
+currently #Deadlock round: 4 out of 15 rounds, ratio: 0.26666666666666666
+currently #Deadlock round: 4 out of 14 rounds, ratio: 0.2857142857142857
+currently #Deadlock round: 4 out of 15 rounds, ratio: 0.26666666666666666
+currently #Deadlock round: 2 out of 13 rounds, ratio: 0.15384615384615385
+currently #Deadlock round: 3 out of 14 rounds, ratio: 0.21428571428571427
+currently #Deadlock round: 2 out of 13 rounds, ratio: 0.15384615384615385
+currently #Deadlock round: 1 out of 13 rounds, ratio: 0.07692307692307693
+currently #Deadlock round: 3 out of 14 rounds, ratio: 0.21428571428571427
+currently #Deadlock round: 1 out of 13 rounds, ratio: 0.07692307692307693
+currently #Deadlock round: 2 out of 14 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 5 out of 15 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 5 out of 15 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 1 out of 13 rounds, ratio: 0.07692307692307693
+currently #Deadlock round: 3 out of 14 rounds, ratio: 0.21428571428571427
+currently #Deadlock round: 1 out of 13 rounds, ratio: 0.07692307692307693
+currently #Deadlock round: 3 out of 14 rounds, ratio: 0.21428571428571427
+currently #Deadlock round: 2 out of 14 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 1 out of 13 rounds, ratio: 0.07692307692307693
+currently #Deadlock round: 2 out of 14 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 1 out of 13 rounds, ratio: 0.07692307692307693
+currently #Deadlock round: 3 out of 14 rounds, ratio: 0.21428571428571427
+currently #Deadlock round: 2 out of 14 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 2 out of 13 rounds, ratio: 0.15384615384615385
+currently #Deadlock round: 2 out of 14 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 1 out of 13 rounds, ratio: 0.07692307692307693
+currently #Deadlock round: 4 out of 15 rounds, ratio: 0.26666666666666666
+currently #Deadlock round: 0 out of 12 rounds, ratio: 0.0
+currently #Deadlock round: 1 out of 13 rounds, ratio: 0.07692307692307693
+currently #Deadlock round: 2 out of 14 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 4 out of 15 rounds, ratio: 0.26666666666666666
+currently #Deadlock round: 4 out of 15 rounds, ratio: 0.26666666666666666
+currently #Deadlock round: 2 out of 14 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 1 out of 13 rounds, ratio: 0.07692307692307693
+currently #Deadlock round: 3 out of 14 rounds, ratio: 0.21428571428571427
+currently #Deadlock round: 6 out of 16 rounds, ratio: 0.375
+currently #Deadlock round: 4 out of 16 rounds, ratio: 0.25
+currently #Deadlock round: 4 out of 16 rounds, ratio: 0.25
+currently #Deadlock round: 3 out of 15 rounds, ratio: 0.2
+currently #Deadlock round: 2 out of 14 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 4 out of 15 rounds, ratio: 0.26666666666666666
+currently #Deadlock round: 5 out of 16 rounds, ratio: 0.3125
+currently #Deadlock round: 4 out of 16 rounds, ratio: 0.25
+currently #Deadlock round: 3 out of 15 rounds, ratio: 0.2
+currently #Deadlock round: 4 out of 15 rounds, ratio: 0.26666666666666666
+currently #Deadlock round: 3 out of 15 rounds, ratio: 0.2
+currently #Deadlock round: 2 out of 14 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 3 out of 15 rounds, ratio: 0.2
+currently #Deadlock round: 3 out of 15 rounds, ratio: 0.2
+currently #Deadlock round: 1 out of 14 rounds, ratio: 0.07142857142857142
+currently #Deadlock round: 2 out of 15 rounds, ratio: 0.13333333333333333
+currently #Deadlock round: 6 out of 17 rounds, ratio: 0.35294117647058826
+currently #Deadlock round: 5 out of 16 rounds, ratio: 0.3125
+currently #Deadlock round: 1 out of 14 rounds, ratio: 0.07142857142857142
+currently #Deadlock round: 2 out of 15 rounds, ratio: 0.13333333333333333
+currently #Deadlock round: 3 out of 15 rounds, ratio: 0.2
+currently #Deadlock round: 1 out of 14 rounds, ratio: 0.07142857142857142
+currently #Deadlock round: 3 out of 15 rounds, ratio: 0.2
+currently #Deadlock round: 2 out of 14 rounds, ratio: 0.14285714285714285
+currently #Deadlock round: 1 out of 14 rounds, ratio: 0.07142857142857142
+currently #Deadlock round: 2 out of 15 rounds, ratio: 0.13333333333333333
+currently #Deadlock round: 4 out of 16 rounds, ratio: 0.25
+currently #Deadlock round: 2 out of 15 rounds, ratio: 0.13333333333333333
+currently #Deadlock round: 2 out of 15 rounds, ratio: 0.13333333333333333
+currently #Deadlock round: 4 out of 16 rounds, ratio: 0.25
+currently #Deadlock round: 1 out of 14 rounds, ratio: 0.07142857142857142
+currently #Deadlock round: 4 out of 16 rounds, ratio: 0.25
+currently #Deadlock round: 0 out of 13 rounds, ratio: 0.0
+currently #Deadlock round: 6 out of 17 rounds, ratio: 0.35294117647058826
+currently #Deadlock round: 2 out of 16 rounds, ratio: 0.125
+currently #Deadlock round: 3 out of 16 rounds, ratio: 0.1875
+currently #Deadlock round: 1 out of 14 rounds, ratio: 0.07142857142857142
+currently #Deadlock round: 4 out of 17 rounds, ratio: 0.23529411764705882
+currently #Deadlock round: 3 out of 15 rounds, ratio: 0.2
+currently #Deadlock round: 4 out of 17 rounds, ratio: 0.23529411764705882
+currently #Deadlock round: 1 out of 15 rounds, ratio: 0.06666666666666667
+currently #Deadlock round: 2 out of 15 rounds, ratio: 0.13333333333333333
+currently #Deadlock round: 3 out of 16 rounds, ratio: 0.1875
+currently #Deadlock round: 4 out of 16 rounds, ratio: 0.25
+currently #Deadlock round: 3 out of 16 rounds, ratio: 0.1875
+currently #Deadlock round: 4 out of 17 rounds, ratio: 0.23529411764705882
+currently #Deadlock round: 3 out of 16 rounds, ratio: 0.1875
+currently #Deadlock round: 4 out of 16 rounds, ratio: 0.25
+currently #Deadlock round: 2 out of 15 rounds, ratio: 0.13333333333333333
+currently #Deadlock round: 5 out of 17 rounds, ratio: 0.29411764705882354
+currently #Deadlock round: 6 out of 18 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 5 out of 17 rounds, ratio: 0.29411764705882354
+currently #Deadlock round: 2 out of 16 rounds, ratio: 0.125
+currently #Deadlock round: 3 out of 17 rounds, ratio: 0.17647058823529413
+currently #Deadlock round: 1 out of 15 rounds, ratio: 0.06666666666666667
+currently #Deadlock round: 3 out of 16 rounds, ratio: 0.1875
+currently #Deadlock round: 1 out of 15 rounds, ratio: 0.06666666666666667
+currently #Deadlock round: 6 out of 18 rounds, ratio: 0.3333333333333333
+currently #Deadlock round: 3 out of 16 rounds, ratio: 0.1875
+currently #Deadlock round: 2 out of 15 rounds, ratio: 0.13333333333333333
+currently #Deadlock round: 1 out of 15 rounds, ratio: 0.06666666666666667
+currently #Deadlock round: 4 out of 17 rounds, ratio: 0.23529411764705882
+currently #Deadlock round: 2 out of 16 rounds, ratio: 0.125
+currently #Deadlock round: 2 out of 16 rounds, ratio: 0.125
+currently #Deadlock round: 1 out of 15 rounds, ratio: 0.06666666666666667
+currently #Deadlock round: 0 out of 14 rounds, ratio: 0.0
+currently #Deadlock round: 2 out of 16 rounds, ratio: 0.125
