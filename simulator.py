@@ -578,7 +578,7 @@ def init_7_main_loop(config, sum_deadlock_rounds, lock):
 
     main_loop(gpus, groups, total_rounds, sum_deadlock_rounds, lock)
     
-    print(f"Process {proc.pid} model: {model}, gropuing_policy: {grouping_policy} gpu_num: {gpu_num}, group_num: {group_num}, coll_num: {coll_num}, disorder_prob: {disorder_prob}, sync_prob: {sync_prob}", flush=True)
+    print(f"Process {proc.pid} model: {model}, gropuing_policy: {grouping_policy} gpu_num: {gpu_num}, group_num: {group_num}, coll_num: {coll_num}, disorder_prob: {disorder_prob}, sync_prob: {sync_prob}, resource_limit: {resource_limit}", flush=True)
     if grouping_policy == MEGATRON_GROUPING_POLICY:
         print(f"tp_group_size: {config['tp_group_size']}, dp_group_size: {config['dp_group_size']}, pp_group_size: {config['pp_group_size']}, coll_cnt_per_tp_group: {config['coll_cnt_per_tp_group']}, coll_cnt_per_dp_group: {config['coll_cnt_per_dp_group']}", flush=True)
 
