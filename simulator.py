@@ -201,12 +201,14 @@ class SingleQueueGroup(Group):
 
 
 class StreamWithSyncGroup(Group):
-    def __init__(self, group_id, gpus, expected_colls):
+    def __init__(self, group_id, gpus, expected_colls, resource_limit):
         super().__init__(group_id, gpus, expected_colls)
         self.submitted_undone_colls_in_group = set()
         self.unsubmitted_colls_from_gpu = {}
         self.submitted_undone_colls_from_gpu = {}
         self.hang_gpus = set()
+        self.resource_limit = resource_limit
+        print(f"resource_limit: {resource_limit}")
 
         self.reset()
 
@@ -247,9 +249,9 @@ class StreamWithSyncGroup(Group):
                 for gpu_id in self.gpus:
                     self.submitted_undone_colls_from_gpu[gpu_id].remove(coll_id)
             
-            # TODO: 考虑最大并行度
-            # if len(self.submitted_undone_colls_from_gpu[gpu_id]) > 50:
-            #     return -1
+            if self.resource_limit > 0:
+                if len(self.submitted_undone_colls_from_gpu[gpu_id]) > self.resource_limit:
+                    return -1
 
             new_hang_gpus = set()
             for hang_gpu_id in self.hang_gpus:
@@ -518,6 +520,11 @@ def main_loop(gpus, groups, total_rounds, sum_deadlock_rounds, lock):
 def init_7_main_loop(config, sum_deadlock_rounds, lock):
 
     total_rounds, gpu_num, group_num, coll_num, disorder_prob, sync_prob, model, grouping_policy, gpu_per_group, coll_per_group, coll_2_group_id = parse_config(config)
+
+    if "resource_limit" in config:
+        resource_limit = config['resource_limit']
+    else:
+        resource_limit = -1
     
     proc = current_process()
 
@@ -534,7 +541,7 @@ def init_7_main_loop(config, sum_deadlock_rounds, lock):
     if model == SINGLE_MODEL:
         groups = [SingleQueueGroup(group_id, gpu_per_group[group_id], coll_per_group[group_id]) for group_id in range(group_num)]
     elif model == STREAM_WITH_SYNC_MODEL:
-        groups = [StreamWithSyncGroup(group_id, gpu_per_group[group_id], coll_per_group[group_id]) for group_id in range(group_num)]
+        groups = [StreamWithSyncGroup(group_id, gpu_per_group[group_id], coll_per_group[group_id], resource_limit) for group_id in range(group_num)]
 
     if PRINT_GROUP_CLASS:
         for group in groups:

@@ -6,6 +6,7 @@
   "sync_prob": 0.1,
   "model": "StreamWithSync",
   "grouping_policy": "Arbitrary",
+  "resource_limit": 50,
   "group_num": 4,
   "gpu_per_group": [
     [0, 1, 2],
