@@ -1,0 +1,1279 @@
+
+
+================
+Start
+================
+
+
+6213
+6214
+6215
+6216
+6217
+6218
+6219
+6220
+6221
+6222
+6223
+6224
+6225
+6226
+6227
+6228
+6229
+6230
+6232
+6233
+6234
+6235
+6236
+6238
+6239
+6241
+6242
+6243
+6244
+6245
+6246
+6248
+start 32 processes, each 10 rounds
+
+
+Process 6223 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6224 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6225 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6222 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6217 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+Process 6230 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6214 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6233 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6246 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6216 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6226 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6220 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6213 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6219 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6229 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6228 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+Process 6218 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6232 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6243 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6234 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6227 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6244 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6242 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6239 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6241 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6215 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6235 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6248 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6245 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6221 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6236 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6238 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Process 6234 before main loop
+Process 6216 before main loop
+Process 6225 before main loop
+Process 6241 before main loop
+Process 6233 before main loop
+Process 6224 before main loop
+Process 6242 before main loop
+Process 6246 before main loop
+Process 6227 before main loop
+Process 6219 before main loop
+Process 6220 before main loop
+Process 6214 before main loop
+Process 6235 before main loop
+Process 6215 before main loop
+Process 6213 before main loop
+Process 6222 before main loop
+Process 6218 before main loop
+Process 6217 before main loop
+Process 6228 before main loop
+Process 6230 before main loop
+Process 6232 before main loop
+Process 6238 before main loop
+Process 6223 before main loop
+Process 6243 before main loop
+Process 6244 before main loop
+Process 6245 before main loop
+Process 6226 before main loop
+Process 6239 before main loop
+Process 6221 before main loop
+Process 6229 before main loop
+Process 6248 before main loop
+Process 6236 before main loop
+Ring found:
+844-2912-721739-S 844-2913-721739-U 844-2913-721738-S 844-2912-721738-U 844-2912-721739-S
+currently #Deadlock round: 1 out of 1 rounds, ratio: 1.0
+
+
+Ring found:
+458-1564-391465-S 458-1540-391465-U 458-1540-391466-S 458-1564-391466-U 458-1564-391465-S
+currently #Deadlock round: 1 out of 1 rounds, ratio: 1.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 1 out of 2 rounds, ratio: 0.5
+
+
+Ring found:
+431-1477-368590-S 431-1445-368590-U 431-1445-368591-S 431-1477-368591-U 431-1477-368590-S
+currently #Deadlock round: 1 out of 2 rounds, ratio: 0.5
+
+
+currently #Deadlock round: 1 out of 2 rounds, ratio: 0.5
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 1 out of 3 rounds, ratio: 0.3333333333333333
+
+
+Ring found:
+744-2563-636938-S 744-2564-636938-U 744-2564-636939-S 744-2563-636939-U 744-2563-636938-S
+currently #Deadlock round: 1 out of 3 rounds, ratio: 0.3333333333333333
+
+
+currently #Deadlock round: 1 out of 3 rounds, ratio: 0.3333333333333333
+
+
+currently #Deadlock round: 1 out of 3 rounds, ratio: 0.3333333333333333
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 1 out of 4 rounds, ratio: 0.25
+
+
+currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 1 out of 4 rounds, ratio: 0.25
+
+
+Ring found:
+414-1426-352835-S 414-1402-352835-U 414-1402-352834-S 414-1426-352834-U 414-1426-352835-S
+currently #Deadlock round: 1 out of 4 rounds, ratio: 0.25
+
+
+currently #Deadlock round: 1 out of 4 rounds, ratio: 0.25
+
+
+currently #Deadlock round: 1 out of 4 rounds, ratio: 0.25
+
+
+Ring found:
+371-1265-316209-S 371-1249-316209-U 371-1249-316210-S 371-1265-316210-U 371-1265-316209-S
+currently #Deadlock round: 1 out of 4 rounds, ratio: 0.25
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 1 out of 5 rounds, ratio: 0.2
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 1 out of 5 rounds, ratio: 0.2
+
+
+currently #Deadlock round: 1 out of 5 rounds, ratio: 0.2
+
+
+currently #Deadlock round: 1 out of 5 rounds, ratio: 0.2
+
+
+currently #Deadlock round: 1 out of 5 rounds, ratio: 0.2
+
+
+Ring found:
+44-161-37120-S 44-163-37120-U 44-163-37119-S 44-161-37119-U 44-161-37120-S
+currently #Deadlock round: 2 out of 6 rounds, ratio: 0.3333333333333333
+
+
+currently #Deadlock round: 1 out of 5 rounds, ratio: 0.2
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+Ring found:
+280-961-240191-S 280-967-240191-U 280-967-240190-S 280-961-240190-U 280-961-240191-S
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+
+
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+
+
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+
+
+currently #Deadlock round: 2 out of 7 rounds, ratio: 0.2857142857142857
+
+
+currently #Deadlock round: 1 out of 6 rounds, ratio: 0.16666666666666666
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+
+
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+
+
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+
+
+currently #Deadlock round: 2 out of 8 rounds, ratio: 0.25
+
+
+currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+
+
+currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+
+
+currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+
+
+currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+
+
+currently #Deadlock round: 2 out of 9 rounds, ratio: 0.2222222222222222
+
+
+currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 1 out of 9 rounds, ratio: 0.1111111111111111
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 1 out of 9 rounds, ratio: 0.1111111111111111
+
+
+currently #Deadlock round: 1 out of 9 rounds, ratio: 0.1111111111111111
+
+
+currently #Deadlock round: 1 out of 9 rounds, ratio: 0.1111111111111111
+
+
+currently #Deadlock round: 1 out of 9 rounds, ratio: 0.1111111111111111
+
+
+currently #Deadlock round: 2 out of 10 rounds, ratio: 0.2
+
+
+
+
+~~~Process 6217 #Deadlock round: 2 out of 10 rounds, ratio: 0.2
+Process 6217 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+Ring found:
+636-2184-542941-S 636-2192-542941-U 636-2192-542940-S 636-2184-542940-U 636-2184-542941-S
+currently #Deadlock round: 1 out of 9 rounds, ratio: 0.1111111111111111
+
+
+currently #Deadlock round: 1 out of 9 rounds, ratio: 0.1111111111111111
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+
+
+
+
+~~~Process 6248 #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+Process 6248 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+
+
+
+
+~~~Process 6246 #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+Process 6246 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+
+
+
+
+~~~Process 6229 #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+Process 6229 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+
+
+
+
+~~~Process 6223 #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+Process 6223 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+
+
+
+
+~~~Process 6225 #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+Process 6225 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+
+
+
+
+~~~Process 6224 #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+Process 6224 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+
+
+
+
+~~~Process 6230 #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+Process 6230 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6233 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6233 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6232 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6232 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6227 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6227 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6215 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6215 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6234 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6234 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6216 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6216 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6245 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6245 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6213 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6213 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6238 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6238 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6219 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6219 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6214 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6214 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6236 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6236 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6221 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6221 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6239 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6239 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6218 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6218 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6220 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6220 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6242 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6242 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6241 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6241 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6235 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6235 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6243 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6243 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6228 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6228 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6226 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6226 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6222 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6222 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+
+
+~~~Process 6244 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+Process 6244 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.001, sync_prob: 0.001, resource_limit: 3
+tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+
+================
+Summary: #Deadlock round: 9 out of 320 rounds, ratio: 0.028125

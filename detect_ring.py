@@ -23,6 +23,7 @@ import pprint
 
 PRINT_RING = True
 PRINT_DEBUG = False
+PRINT_PERFORMANCE = True
 
 class RingDetector:
     def __init__(self) -> None:
@@ -61,8 +62,20 @@ class RingDetector:
         if PRINT_DEBUG:
             print("in detect_ring", flush=True)
             pprint.pprint(graph)
+        
+        if PRINT_PERFORMANCE:
+            max_neighbors = 0
+            for v in graph.keys():
+                if len(graph[v]) > max_neighbors:
+                    max_neighbors = len(graph[v])
+            print(f"#nodes: {len(graph.keys())} max_neighbors: {max_neighbors}", flush=True)
+        
+
         for v in graph.keys():
             self.dfs(graph, v)
             if self.find_ring:
                 return True
+            
+        if PRINT_PERFORMANCE:
+            print(f"no ring, return", flush=True)
         return False

@@ -15,10 +15,10 @@ MEGATRON_GROUPING_POLICY = "Megatron"
 ARBITRARY_GROUPING_POLICY = "Arbitrary"
 
 # print log control
-PRINT_PARSE_RAW = False
+PRINT_PARSE_RAW = True
 PRINT_GROUP_CLASS = False
 PRINT_GPU_CLASS = False
-PRINT_MAIN_LOOP = False
+PRINT_MAIN_LOOP = True
 PRINT_GRAPH = False
 PRINT_DEADLOCK_DETAIL = False
 PRINT_ROUND_REPORT = True
@@ -223,8 +223,11 @@ class StreamWithSyncGroup(Group):
 
     def group_check_hang(self, gpu_id) -> bool:
         gpu_submitted_undone_colls = self.submitted_undone_colls_from_gpu[gpu_id]
-        return len(gpu_submitted_undone_colls.
+        ret = len(gpu_submitted_undone_colls.
                    intersection(self.submitted_undone_colls_in_group)) > 0
+        if ret and PRINT_MAIN_LOOP:
+            print(f"Group {self.group_id} GPU {gpu_id} hang, gpu_submitted_undone_colls: {gpu_submitted_undone_colls}, submitted_undone_colls_in_group: {self.submitted_undone_colls_in_group}", flush=True)
+        return ret
 
     def submit(self, gpu_id, coll_id, round_id) -> int:
         assert not gpu_id in self.hang_gpus, "已经hang的gpu不能提交任何东西"
@@ -274,45 +277,46 @@ class StreamWithSyncGroup(Group):
                 ret = 1
                 self.hang_gpus.add(gpu_id)
 
-            # 判断死锁：
-            # 建图：
-            coll_graph = {}
-            for hang_gpu_id in self.hang_gpus:
-                for coll_id in self.submitted_undone_colls_from_gpu[hang_gpu_id]:
-                    # submitted_undone_colls的边都指向其他GPU的unsubmitted_colls中和自己同名的coll
-                    coll_node = "-".join([str(self.group_id), str(hang_gpu_id), str(coll_id)]) + "-S"
-                    coll_graph.setdefault(coll_node, [])
-                    for other_hang_gpu_id in self.hang_gpus:
-                        if other_hang_gpu_id == hang_gpu_id:
-                            continue
-                        for unsubmitted_coll_id in self.unsubmitted_colls_from_gpu[other_hang_gpu_id]:
-                            if unsubmitted_coll_id == coll_id:
-                                unsubmitted_coll_node = "-".join([str(self.group_id), str(other_hang_gpu_id), str(unsubmitted_coll_id)]) + "-U"
-                                coll_graph[coll_node].append(unsubmitted_coll_node)
-                    
-                for coll_id in self.unsubmitted_colls_from_gpu[hang_gpu_id]:
-                    # unsubmitted_colls的边都指向同一个GPU中所有submitted_undone_colls中的coll
-                    coll_node = "-".join([str(self.group_id), str(hang_gpu_id), str(coll_id)]) + "-U"
-                    coll_graph.setdefault(coll_node, [])
-                    # for submitted_undone_coll_id in self.submitted_undone_colls_from_gpu[hang_gpu_id]:
-                    #     submitted_undone_coll_node = "-".join([str(self.group_id), str(hang_gpu_id), str(submitted_undone_coll_id)])
-                    #     coll_graph[coll_node].append(submitted_undone_coll_node)
-                    coll_graph[coll_node].extend(["-".join([str(self.group_id), str(hang_gpu_id), str(submitted_undone_coll_id)]) + "-S" for submitted_undone_coll_id in self.submitted_undone_colls_from_gpu[hang_gpu_id]])
-            if PRINT_GRAPH:
-                self.print_graph(round_id, coll_graph)
+            if len(self.hang_gpus) >= 2:  # bug here. 之前写成了>2，导致死锁检测不出来。
+                # 判断死锁：
+                # 建图：
+                coll_graph = {}
+                for hang_gpu_id in self.hang_gpus:
+                    for coll_id in self.submitted_undone_colls_from_gpu[hang_gpu_id]:
+                        # submitted_undone_colls的边都指向其他GPU的unsubmitted_colls中和自己同名的coll
+                        coll_node = "-".join([str(self.group_id), str(hang_gpu_id), str(coll_id)]) + "-S"
+                        coll_graph.setdefault(coll_node, [])
+                        for other_hang_gpu_id in self.hang_gpus:
+                            if other_hang_gpu_id == hang_gpu_id:
+                                continue
+                            for unsubmitted_coll_id in self.unsubmitted_colls_from_gpu[other_hang_gpu_id]:
+                                if unsubmitted_coll_id == coll_id:
+                                    unsubmitted_coll_node = "-".join([str(self.group_id), str(other_hang_gpu_id), str(unsubmitted_coll_id)]) + "-U"
+                                    coll_graph[coll_node].append(unsubmitted_coll_node)
+                        
+                    for coll_id in self.unsubmitted_colls_from_gpu[hang_gpu_id]:
+                        # unsubmitted_colls的边都指向同一个GPU中所有submitted_undone_colls中的coll
+                        coll_node = "-".join([str(self.group_id), str(hang_gpu_id), str(coll_id)]) + "-U"
+                        coll_graph.setdefault(coll_node, [])
+                        # for submitted_undone_coll_id in self.submitted_undone_colls_from_gpu[hang_gpu_id]:
+                        #     submitted_undone_coll_node = "-".join([str(self.group_id), str(hang_gpu_id), str(submitted_undone_coll_id)])
+                        #     coll_graph[coll_node].append(submitted_undone_coll_node)
+                        coll_graph[coll_node].extend(["-".join([str(self.group_id), str(hang_gpu_id), str(submitted_undone_coll_id)]) + "-S" for submitted_undone_coll_id in self.submitted_undone_colls_from_gpu[hang_gpu_id]])
+                if PRINT_GRAPH:
+                    self.print_graph(round_id, coll_graph)
 
-            # 检测环
-            
-            if PRINT_MAIN_LOOP:
-                print(f"Round {round_id}, Group {self.group_id} GPU {gpu_id} before detect_ring", flush=True) 
-            detector = RingDetector()
-            result = detector.detect_ring(coll_graph)
-            if PRINT_MAIN_LOOP:
-                print(f"Round {round_id}, Group {self.group_id} GPU {gpu_id} detect_ring return {result}", flush=True) 
-            if result:
-                ret = -1
-                if PRINT_DEADLOCK_DETAIL:
-                    self.print_deadlock_info(round_id, coll_graph)
+                # 检测环
+                
+                if PRINT_MAIN_LOOP:
+                    print(f"Round {round_id}, Group {self.group_id} GPU {gpu_id} before detect_ring", flush=True) 
+                detector = RingDetector()  # bug here。最一开始没有用class，vis、trace数组是全局变量，导致数组没有清空，每次数组内容都累加
+                result = detector.detect_ring(coll_graph)
+                if PRINT_MAIN_LOOP:
+                    print(f"Round {round_id}, Group {self.group_id} GPU {gpu_id} detect_ring return {result}", flush=True) 
+                if result:
+                    ret = -1
+                    if PRINT_DEADLOCK_DETAIL:
+                        self.print_deadlock_info(round_id, coll_graph)
 
         return ret
             
@@ -446,21 +450,47 @@ def parse_config(config):
 
 
 def dispatch_coll_2_gpu(gpu_per_group, coll_per_group):
-    coll_per_gpu = {}
 
     assert len(gpu_per_group) == len(coll_per_group), "这咋能不一样"
+
+    #===================================================
+    # coll_per_gpu = {}
+    
+    # for group_id in range(len(gpu_per_group)):
+    #     gpu_list = gpu_per_group[group_id]
+    #     coll_list = coll_per_group[group_id]
+    #     for gpu_id in gpu_list:
+    #         coll_per_gpu.setdefault(gpu_id, []).extend(coll_list)
+    #===================================================
+
+    #===================================================
+    coll_per_gpu_2d = {}
+    max_sublist_len_per_gpu = {}
+    coll_per_gpu = {}
     for group_id in range(len(gpu_per_group)):
         gpu_list = gpu_per_group[group_id]
         coll_list = coll_per_group[group_id]
         for gpu_id in gpu_list:
-            coll_per_gpu.setdefault(gpu_id, []).extend(coll_list)
-    
+            coll_per_gpu_2d.setdefault(gpu_id, []).append(coll_list)
+            if gpu_id in max_sublist_len_per_gpu:
+                max_sublist_len_per_gpu[gpu_id] = max(max_sublist_len_per_gpu[gpu_id], len(coll_list))
+            else:
+                max_sublist_len_per_gpu[gpu_id] = len(coll_list)
+
+    for gpu_id in coll_per_gpu_2d:
+        coll_per_gpu.setdefault(gpu_id, [])
+        for index in range(max_sublist_len_per_gpu[gpu_id]):
+            for sub_coll_list in coll_per_gpu_2d[gpu_id]:
+                if index < len(sub_coll_list):
+                    coll_per_gpu[gpu_id].append(sub_coll_list[index])
+    #===================================================
+
     if PRINT_PARSE_RAW:
         for gpu_id in coll_per_gpu:
             print(f"gpu {gpu_id} has colls: {coll_per_gpu[gpu_id]}", flush=True)
     
     return coll_per_gpu
-
+        
 
 def get_groups_of_gpus(gpu_per_group):
     group_ids_of_gpus = {}
@@ -474,6 +504,8 @@ def get_groups_of_gpus(gpu_per_group):
 def all_gpu_submit_done(gpus):
     for gpu in gpus:
         if gpu.submit_counter < gpu.coll_num:
+            if PRINT_MAIN_LOOP:
+                print(f"GPU {gpu.gpu_id} submit_counter: {gpu.submit_counter} < coll_num: {gpu.coll_num}", flush=True)
             return False
     return True
 
@@ -494,11 +526,17 @@ def main_loop(gpus, groups, total_rounds, sum_deadlock_rounds, lock):
             # 每个GPU提交一个coll
             encounter_deadlock = False
             for gpu in gpus:
+                # if PRINT_MAIN_LOOP:
+                #     print(f"Round {round_id} GPU {gpu.gpu_id} works", flush=True)
                 if gpu.is_hang:
                     assert isinstance(gpu, StreamWithSyncGPU), "hang的GPU必须是StreamWithSyncGPU"
                     if gpu.gpu_check_hang():
+                        # if PRINT_MAIN_LOOP:
+                        #     print(f"Round {round_id} GPU {gpu.gpu_id} is hang, skip", flush=True)
                         continue
                 if gpu.submit_counter == gpu.coll_num: # 这个GPU已经提交完了，跳过
+                    # if PRINT_MAIN_LOOP:
+                    #     print(f"Round {round_id} GPU {gpu.gpu_id} submit_counter: {gpu.submit_counter} == coll_num: {gpu.coll_num}, skip", flush=True)
                     continue
                 if PRINT_MAIN_LOOP:
                     print(f"Round {round_id} GPU {gpu.gpu_id} submits", flush=True)

@@ -1,0 +1,1172 @@
+
+
+================
+Start
+================
+
+
+26611
+26614
+26615
+26618
+26619
+26620
+26621
+26622
+26623
+26624
+26625
+26626
+26627
+26628
+Process 26611 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26614 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+26632
+26633
+26634
+26635
+26636
+Process 26615 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+26638
+Process 26619 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26626 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+26641
+26642
+Process 26625 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26618 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26623 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26627 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+26643
+Process 26620 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26624 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26622 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26628 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26621 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26636 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26635 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26632 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+26647
+26648
+26649
+26650
+26651
+Process 26633 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+26652
+26653
+26654
+26655
+start 32 processes, each 100 rounds
+
+
+Process 26641 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26634 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26638 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26643 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26642 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26650 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26611 before main loop
+Process 26648 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26647 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26614 before main loop
+Process 26654 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26649 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26651 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26653 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+Process 26652 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26615 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26619 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26628 before main loop
+Process 26655 model: StreamWithSync, gropuing_policy: Arbitrary gpu_num: 64, group_num: 32, coll_num: 25600, disorder_prob: 0.001, sync_prob: 0.001
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26626 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26623 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26618 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26624 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26622 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26625 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26621 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26627 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26620 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26633 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26641 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26636 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26643 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26632 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26635 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26638 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26634 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26642 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26654 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26653 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26649 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26648 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26650 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26651 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26647 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26655 before main loop
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+resource_limit: -1
+Process 26652 before main loop
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
