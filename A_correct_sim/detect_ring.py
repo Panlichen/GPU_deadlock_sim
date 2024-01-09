@@ -18,41 +18,51 @@
 # 对于顶点v的每一个相邻顶点，递归调用dfs函数。
 # 完成对所有相邻顶点的探索后，从trace中移除顶点v。
 
+import pprint
+
+
 PRINT_RING = True
+PRINT_DEBUG = False
 
-vis = []
-trace = []
-find_ring = False
+class RingDetector:
+    def __init__(self) -> None:
+        self.reset()
 
-def dfs(graph, v):
-    global find_ring
-    global vis
-    global trace
-    if v in vis:
-        if v in trace:
-            find_ring = True
-            if PRINT_RING:
-                v_index = trace.index(v)
-                print("有环：")
-                for i in range(v_index, len(trace)):
-                    print(trace[i] + ' ', end='')
-                print(v)
-                print("\n")
+    def reset(self):
+        self.vis = []
+        self.trace = []
+        self.find_ring = False
+
+    def dfs(self, graph, v):
+        if PRINT_DEBUG:
+            print(f"in dfs, v: {v}, self.vis: {self.vis}, trace: {self.trace}, v in self.vis: {v in self.vis}, v in self.trace: {v in self.trace}", flush=True)
+        if v in self.vis:
+            if v in self.trace:
+                self.find_ring = True
+                if PRINT_RING:
+                    v_index = self.trace.index(v)
+                    print("Ring found:")
+                    for i in range(v_index, len(self.trace)):
+                        print(self.trace[i] + ' ', end='')
+                    print(v)
+                    # print("\n")
+                return
             return
-        return
 
-    vis.append(v)
-    trace.append(v)
-    for vs in graph[v]:
-        dfs(graph, vs)
-        if find_ring:
-            return
-    trace.pop()
+        self.vis.append(v)
+        self.trace.append(v)
+        for vs in graph[v]:
+            self.dfs(graph, vs)
+            if self.find_ring:
+                return
+        self.trace.pop()
 
-
-def detect_ring(graph) -> bool:
-    for v in graph.keys():
-        dfs(graph, v)
-        if find_ring:
-            return True
-    return False
+    def detect_ring(self, graph) -> bool:
+        if PRINT_DEBUG:
+            print("in detect_ring", flush=True)
+            pprint.pprint(graph)
+        for v in graph.keys():
+            self.dfs(graph, v)
+            if self.find_ring:
+                return True
+        return False
