@@ -250,7 +250,7 @@ class StreamWithSyncGroup(Group):
             
             if self.resource_limit > 0:
                 if len(self.submitted_undone_colls_from_gpu[gpu_id]) > self.resource_limit:
-                    print(f"exceeds resource limit {self.resource_limit}, gpu {gpu_id} has submitted_undone_colls: {self.submitted_undone_colls_from_gpu[gpu_id]}", flush=True)
+                    print(f"exceeds resource limit {self.resource_limit}, gpu {gpu_id} has {len(self.submitted_undone_colls_from_gpu[gpu_id])} submitted_undone_colls", flush=True)
                     return -1
 
             new_hang_gpus = set()
