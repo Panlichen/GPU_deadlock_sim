@@ -208,7 +208,6 @@ class StreamWithSyncGroup(Group):
         self.submitted_undone_colls_from_gpu = {}
         self.hang_gpus = set()
         self.resource_limit = resource_limit
-        print(f"resource_limit: {resource_limit}")
 
         self.reset()
 
