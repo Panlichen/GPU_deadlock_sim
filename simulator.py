@@ -250,6 +250,7 @@ class StreamWithSyncGroup(Group):
             
             if self.resource_limit > 0:
                 if len(self.submitted_undone_colls_from_gpu[gpu_id]) > self.resource_limit:
+                    print(f"exceeds resource limit {self.resource_limit}, gpu {gpu_id} has submitted_undone_colls: {self.submitted_undone_colls_from_gpu[gpu_id]}", flush=True)
                     return -1
 
             new_hang_gpus = set()
@@ -528,7 +529,7 @@ def init_7_main_loop(config, sum_deadlock_rounds, lock):
     proc = current_process()
 
     if PRINT_PARSE_AT_BEGIN:
-        print(f"Process {proc.pid} model: {model}, gropuing_policy: {grouping_policy} gpu_num: {gpu_num}, group_num: {group_num}, coll_num: {coll_num}, disorder_prob: {disorder_prob}, sync_prob: {sync_prob}", flush=True)
+        print(f"Process {proc.pid} model: {model}, gropuing_policy: {grouping_policy} gpu_num: {gpu_num}, group_num: {group_num}, coll_num: {coll_num}, disorder_prob: {disorder_prob}, sync_prob: {sync_prob}, resource_limit: {resource_limit}", flush=True)
         if grouping_policy == MEGATRON_GROUPING_POLICY:
             print(f"tp_group_size: {config['tp_group_size']}, dp_group_size: {config['dp_group_size']}, pp_group_size: {config['pp_group_size']}, coll_cnt_per_tp_group: {config['coll_cnt_per_tp_group']}, coll_cnt_per_dp_group: {config['coll_cnt_per_dp_group']}", flush=True)
 
