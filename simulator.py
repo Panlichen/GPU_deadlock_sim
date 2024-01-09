@@ -249,8 +249,13 @@ class StreamWithSyncGroup(Group):
                     self.submitted_undone_colls_from_gpu[gpu_id].remove(coll_id)
             
             if self.resource_limit > 0:
-                if len(self.submitted_undone_colls_from_gpu[gpu_id]) > self.resource_limit:
-                    print(f"exceeds resource limit {self.resource_limit}, gpu {gpu_id} has {len(self.submitted_undone_colls_from_gpu[gpu_id])} submitted_undone_colls", flush=True)
+                all_full_deadlock = True
+                for check_gpu_id in self.gpus:
+                    if len(self.submitted_undone_colls_from_gpu[check_gpu_id]) < self.resource_limit:
+                        all_full_deadlock = False
+                        break
+                if all_full_deadlock:
+                    print(f"all gpus exceed resource limit {self.resource_limit}", flush=True)
                     return -1
 
             new_hang_gpus = set()
