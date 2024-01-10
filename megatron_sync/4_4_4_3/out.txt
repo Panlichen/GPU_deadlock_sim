@@ -7223,3 +7223,2092 @@ Ring found:
 [main_loop] currently #Deadlock round: 9 out of 61 rounds, ratio: 0.14754098360655737
 
 
+Ring found:
+17-10229-S 21-10229-U 21-10228-S 17-10228-U 17-10229-S
+[main_loop] currently #Deadlock round: 6 out of 56 rounds, ratio: 0.10714285714285714
+
+
+[main_loop] currently #Deadlock round: 7 out of 58 rounds, ratio: 0.1206896551724138
+
+
+[main_loop] currently #Deadlock round: 8 out of 59 rounds, ratio: 0.13559322033898305
+
+
+[main_loop] currently #Deadlock round: 12 out of 63 rounds, ratio: 0.19047619047619047
+
+
+[main_loop] currently #Deadlock round: 10 out of 59 rounds, ratio: 0.1694915254237288
+
+
+[main_loop] currently #Deadlock round: 7 out of 61 rounds, ratio: 0.11475409836065574
+
+
+Ring found:
+34-17343-S 46-17343-U 46-17344-S 34-17344-U 34-17343-S
+[main_loop] currently #Deadlock round: 4 out of 57 rounds, ratio: 0.07017543859649122
+
+
+[main_loop] currently #Deadlock round: 8 out of 56 rounds, ratio: 0.14285714285714285
+
+
+[main_loop] currently #Deadlock round: 10 out of 60 rounds, ratio: 0.16666666666666666
+
+
+[main_loop] currently #Deadlock round: 7 out of 63 rounds, ratio: 0.1111111111111111
+
+
+[main_loop] currently #Deadlock round: 10 out of 59 rounds, ratio: 0.1694915254237288
+
+
+[main_loop] currently #Deadlock round: 15 out of 62 rounds, ratio: 0.24193548387096775
+
+
+[main_loop] currently #Deadlock round: 9 out of 62 rounds, ratio: 0.14516129032258066
+
+
+Ring found:
+54-24221-S 62-24221-U 62-24220-S 54-24220-U 54-24221-S
+[main_loop] currently #Deadlock round: 7 out of 59 rounds, ratio: 0.11864406779661017
+
+
+Ring found:
+46-17511-S 38-17511-U 38-17510-S 46-17510-U 46-17511-S
+[main_loop] currently #Deadlock round: 12 out of 62 rounds, ratio: 0.1935483870967742
+
+
+[main_loop] currently #Deadlock round: 6 out of 64 rounds, ratio: 0.09375
+
+
+[main_loop] currently #Deadlock round: 13 out of 63 rounds, ratio: 0.20634920634920634
+
+
+Ring found:
+32-15466-S 36-15466-U 36-15465-S 32-15465-U 32-15466-S
+[main_loop] currently #Deadlock round: 11 out of 61 rounds, ratio: 0.18032786885245902
+
+
+[main_loop] currently #Deadlock round: 10 out of 60 rounds, ratio: 0.16666666666666666
+
+
+[main_loop] currently #Deadlock round: 7 out of 60 rounds, ratio: 0.11666666666666667
+
+
+Ring found:
+14-4643-S 6-4643-U 6-4644-S 14-4644-U 14-4643-S
+[main_loop] currently #Deadlock round: 13 out of 60 rounds, ratio: 0.21666666666666667
+
+
+[main_loop] currently #Deadlock round: 9 out of 62 rounds, ratio: 0.14516129032258066
+
+
+[main_loop] currently #Deadlock round: 9 out of 62 rounds, ratio: 0.14516129032258066
+
+
+[main_loop] currently #Deadlock round: 11 out of 60 rounds, ratio: 0.18333333333333332
+
+
+[main_loop] currently #Deadlock round: 4 out of 59 rounds, ratio: 0.06779661016949153
+
+
+[main_loop] currently #Deadlock round: 15 out of 59 rounds, ratio: 0.2542372881355932
+
+
+[main_loop] currently #Deadlock round: 7 out of 60 rounds, ratio: 0.11666666666666667
+
+
+Ring found:
+51-24817-S 63-24817-U 63-24816-S 51-24816-U 51-24817-S
+[main_loop] currently #Deadlock round: 4 out of 62 rounds, ratio: 0.06451612903225806
+
+
+[main_loop] currently #Deadlock round: 8 out of 62 rounds, ratio: 0.12903225806451613
+
+
+Ring found:
+34-17503-S 46-17503-U 46-17502-S 34-17502-U 34-17503-S
+[main_loop] currently #Deadlock round: 10 out of 61 rounds, ratio: 0.16393442622950818
+
+
+[main_loop] currently #Deadlock round: 9 out of 62 rounds, ratio: 0.14516129032258066
+
+
+[main_loop] currently #Deadlock round: 7 out of 62 rounds, ratio: 0.11290322580645161
+
+
+[main_loop] currently #Deadlock round: 7 out of 59 rounds, ratio: 0.11864406779661017
+
+
+[main_loop] currently #Deadlock round: 7 out of 61 rounds, ratio: 0.11475409836065574
+
+
+[main_loop] currently #Deadlock round: 6 out of 63 rounds, ratio: 0.09523809523809523
+
+
+[main_loop] currently #Deadlock round: 9 out of 64 rounds, ratio: 0.140625
+
+
+[main_loop] currently #Deadlock round: 6 out of 57 rounds, ratio: 0.10526315789473684
+
+
+[main_loop] currently #Deadlock round: 7 out of 60 rounds, ratio: 0.11666666666666667
+
+
+[main_loop] currently #Deadlock round: 12 out of 64 rounds, ratio: 0.1875
+
+
+[main_loop] currently #Deadlock round: 7 out of 64 rounds, ratio: 0.109375
+
+
+[main_loop] currently #Deadlock round: 13 out of 62 rounds, ratio: 0.20967741935483872
+
+
+[main_loop] currently #Deadlock round: 10 out of 60 rounds, ratio: 0.16666666666666666
+
+
+Ring found:
+56-21780-S 48-21780-U 48-21779-S 56-21779-U 56-21780-S
+[main_loop] currently #Deadlock round: 8 out of 62 rounds, ratio: 0.12903225806451613
+
+
+[main_loop] currently #Deadlock round: 8 out of 57 rounds, ratio: 0.14035087719298245
+
+
+[main_loop] currently #Deadlock round: 9 out of 63 rounds, ratio: 0.14285714285714285
+
+
+[main_loop] currently #Deadlock round: 10 out of 60 rounds, ratio: 0.16666666666666666
+
+
+Ring found:
+24-8798-S 28-8798-U 28-8799-S 24-8799-U 24-8798-S
+[main_loop] currently #Deadlock round: 11 out of 61 rounds, ratio: 0.18032786885245902
+
+
+[main_loop] currently #Deadlock round: 12 out of 63 rounds, ratio: 0.19047619047619047
+
+
+Ring found:
+40-14986-S 44-14986-U 44-14985-S 40-14985-U 40-14986-S
+[main_loop] currently #Deadlock round: 5 out of 60 rounds, ratio: 0.08333333333333333
+
+
+[main_loop] currently #Deadlock round: 9 out of 63 rounds, ratio: 0.14285714285714285
+
+
+[main_loop] currently #Deadlock round: 9 out of 63 rounds, ratio: 0.14285714285714285
+
+
+[main_loop] currently #Deadlock round: 4 out of 58 rounds, ratio: 0.06896551724137931
+
+
+[main_loop] currently #Deadlock round: 10 out of 62 rounds, ratio: 0.16129032258064516
+
+
+[main_loop] currently #Deadlock round: 6 out of 65 rounds, ratio: 0.09230769230769231
+
+
+Ring found:
+32-14931-S 36-14931-U 36-14930-S 32-14930-U 32-14931-S
+[main_loop] currently #Deadlock round: 16 out of 63 rounds, ratio: 0.25396825396825395
+
+
+[main_loop] currently #Deadlock round: 10 out of 61 rounds, ratio: 0.16393442622950818
+
+
+[main_loop] currently #Deadlock round: 11 out of 62 rounds, ratio: 0.1774193548387097
+
+
+[main_loop] currently #Deadlock round: 8 out of 60 rounds, ratio: 0.13333333333333333
+
+
+[main_loop] currently #Deadlock round: 7 out of 61 rounds, ratio: 0.11475409836065574
+
+
+[main_loop] currently #Deadlock round: 15 out of 60 rounds, ratio: 0.25
+
+
+[main_loop] currently #Deadlock round: 7 out of 60 rounds, ratio: 0.11666666666666667
+
+
+[main_loop] currently #Deadlock round: 7 out of 61 rounds, ratio: 0.11475409836065574
+
+
+[main_loop] currently #Deadlock round: 7 out of 62 rounds, ratio: 0.11290322580645161
+
+
+[main_loop] currently #Deadlock round: 11 out of 61 rounds, ratio: 0.18032786885245902
+
+
+[main_loop] currently #Deadlock round: 8 out of 63 rounds, ratio: 0.12698412698412698
+
+
+[main_loop] currently #Deadlock round: 7 out of 61 rounds, ratio: 0.11475409836065574
+
+
+[main_loop] currently #Deadlock round: 13 out of 64 rounds, ratio: 0.203125
+
+
+[main_loop] currently #Deadlock round: 7 out of 63 rounds, ratio: 0.1111111111111111
+
+
+[main_loop] currently #Deadlock round: 6 out of 64 rounds, ratio: 0.09375
+
+
+[main_loop] currently #Deadlock round: 12 out of 65 rounds, ratio: 0.18461538461538463
+
+
+[main_loop] currently #Deadlock round: 13 out of 61 rounds, ratio: 0.21311475409836064
+
+
+[main_loop] currently #Deadlock round: 10 out of 61 rounds, ratio: 0.16393442622950818
+
+
+[main_loop] currently #Deadlock round: 9 out of 64 rounds, ratio: 0.140625
+
+
+[main_loop] currently #Deadlock round: 9 out of 63 rounds, ratio: 0.14285714285714285
+
+
+[main_loop] currently #Deadlock round: 4 out of 63 rounds, ratio: 0.06349206349206349
+
+
+[main_loop] currently #Deadlock round: 9 out of 65 rounds, ratio: 0.13846153846153847
+
+
+[main_loop] currently #Deadlock round: 8 out of 58 rounds, ratio: 0.13793103448275862
+
+
+[main_loop] currently #Deadlock round: 10 out of 63 rounds, ratio: 0.15873015873015872
+
+
+[main_loop] currently #Deadlock round: 11 out of 63 rounds, ratio: 0.1746031746031746
+
+
+[main_loop] currently #Deadlock round: 5 out of 61 rounds, ratio: 0.08196721311475409
+
+
+Ring found:
+43-18657-S 39-18657-U 39-18658-S 43-18658-U 43-18657-S
+[main_loop] currently #Deadlock round: 17 out of 64 rounds, ratio: 0.265625
+
+
+[main_loop] currently #Deadlock round: 8 out of 63 rounds, ratio: 0.12698412698412698
+
+
+[main_loop] currently #Deadlock round: 10 out of 62 rounds, ratio: 0.16129032258064516
+
+
+[main_loop] currently #Deadlock round: 13 out of 63 rounds, ratio: 0.20634920634920634
+
+
+[main_loop] currently #Deadlock round: 11 out of 62 rounds, ratio: 0.1774193548387097
+
+
+[main_loop] currently #Deadlock round: 6 out of 66 rounds, ratio: 0.09090909090909091
+
+
+[main_loop] currently #Deadlock round: 12 out of 64 rounds, ratio: 0.1875
+
+
+[main_loop] currently #Deadlock round: 6 out of 58 rounds, ratio: 0.10344827586206896
+
+
+[main_loop] currently #Deadlock round: 10 out of 61 rounds, ratio: 0.16393442622950818
+
+
+Ring found:
+44-15254-S 36-15254-U 36-15253-S 44-15253-U 44-15254-S
+[main_loop] currently #Deadlock round: 10 out of 64 rounds, ratio: 0.15625
+
+
+Ring found:
+25-10316-S 29-10316-U 29-10315-S 25-10315-U 25-10316-S
+[main_loop] currently #Deadlock round: 5 out of 59 rounds, ratio: 0.0847457627118644
+
+
+[main_loop] currently #Deadlock round: 15 out of 61 rounds, ratio: 0.2459016393442623
+
+
+[main_loop] currently #Deadlock round: 7 out of 62 rounds, ratio: 0.11290322580645161
+
+
+[main_loop] currently #Deadlock round: 9 out of 64 rounds, ratio: 0.140625
+
+
+[main_loop] currently #Deadlock round: 8 out of 64 rounds, ratio: 0.125
+
+
+[main_loop] currently #Deadlock round: 7 out of 61 rounds, ratio: 0.11475409836065574
+
+
+[main_loop] currently #Deadlock round: 7 out of 65 rounds, ratio: 0.1076923076923077
+
+
+[main_loop] currently #Deadlock round: 6 out of 65 rounds, ratio: 0.09230769230769231
+
+
+[main_loop] currently #Deadlock round: 7 out of 62 rounds, ratio: 0.11290322580645161
+
+
+[main_loop] currently #Deadlock round: 7 out of 62 rounds, ratio: 0.11290322580645161
+
+
+[main_loop] currently #Deadlock round: 9 out of 65 rounds, ratio: 0.13846153846153847
+
+
+[main_loop] currently #Deadlock round: 8 out of 61 rounds, ratio: 0.13114754098360656
+
+
+[main_loop] currently #Deadlock round: 11 out of 62 rounds, ratio: 0.1774193548387097
+
+
+[main_loop] currently #Deadlock round: 7 out of 64 rounds, ratio: 0.109375
+
+
+Ring found:
+18-11382-S 30-11382-U 30-11381-S 18-11381-U 18-11382-S
+[main_loop] currently #Deadlock round: 18 out of 65 rounds, ratio: 0.27692307692307694
+
+
+[main_loop] currently #Deadlock round: 9 out of 64 rounds, ratio: 0.140625
+
+
+[main_loop] currently #Deadlock round: 10 out of 62 rounds, ratio: 0.16129032258064516
+
+
+[main_loop] currently #Deadlock round: 9 out of 66 rounds, ratio: 0.13636363636363635
+
+
+[main_loop] currently #Deadlock round: 11 out of 64 rounds, ratio: 0.171875
+
+
+Ring found:
+27-12754-S 23-12754-U 23-12755-S 27-12755-U 27-12754-S
+[main_loop] currently #Deadlock round: 14 out of 62 rounds, ratio: 0.22580645161290322
+
+
+[main_loop] currently #Deadlock round: 13 out of 64 rounds, ratio: 0.203125
+
+
+Ring found:
+34-17595-S 38-17595-U 38-17594-S 34-17594-U 34-17595-S
+[main_loop] currently #Deadlock round: 5 out of 64 rounds, ratio: 0.078125
+
+
+[main_loop] currently #Deadlock round: 12 out of 66 rounds, ratio: 0.18181818181818182
+
+
+[main_loop] currently #Deadlock round: 8 out of 64 rounds, ratio: 0.125
+
+
+[main_loop] currently #Deadlock round: 5 out of 62 rounds, ratio: 0.08064516129032258
+
+
+[main_loop] currently #Deadlock round: 7 out of 63 rounds, ratio: 0.1111111111111111
+
+
+[main_loop] currently #Deadlock round: 12 out of 65 rounds, ratio: 0.18461538461538463
+
+
+[main_loop] currently #Deadlock round: 9 out of 65 rounds, ratio: 0.13846153846153847
+
+
+[main_loop] currently #Deadlock round: 6 out of 59 rounds, ratio: 0.1016949152542373
+
+
+[main_loop] currently #Deadlock round: 6 out of 67 rounds, ratio: 0.08955223880597014
+
+
+[main_loop] currently #Deadlock round: 10 out of 64 rounds, ratio: 0.15625
+
+
+[main_loop] currently #Deadlock round: 13 out of 65 rounds, ratio: 0.2
+
+
+[main_loop] currently #Deadlock round: 15 out of 62 rounds, ratio: 0.24193548387096775
+
+
+[main_loop] currently #Deadlock round: 10 out of 62 rounds, ratio: 0.16129032258064516
+
+
+[main_loop] currently #Deadlock round: 8 out of 59 rounds, ratio: 0.13559322033898305
+
+
+[main_loop] currently #Deadlock round: 10 out of 65 rounds, ratio: 0.15384615384615385
+
+
+[main_loop] currently #Deadlock round: 10 out of 63 rounds, ratio: 0.15873015873015872
+
+
+[main_loop] currently #Deadlock round: 11 out of 63 rounds, ratio: 0.1746031746031746
+
+
+[main_loop] currently #Deadlock round: 7 out of 63 rounds, ratio: 0.1111111111111111
+
+
+[main_loop] currently #Deadlock round: 8 out of 62 rounds, ratio: 0.12903225806451613
+
+
+[main_loop] currently #Deadlock round: 7 out of 62 rounds, ratio: 0.11290322580645161
+
+
+Ring found:
+50-23965-S 62-23965-U 62-23964-S 50-23964-U 50-23965-S
+[main_loop] currently #Deadlock round: 6 out of 60 rounds, ratio: 0.1
+
+
+[main_loop] currently #Deadlock round: 18 out of 66 rounds, ratio: 0.2727272727272727
+
+
+Ring found:
+21-9999-S 29-9999-U 29-9998-S 21-9998-U 21-9999-S
+[main_loop] currently #Deadlock round: 7 out of 66 rounds, ratio: 0.10606060606060606
+
+
+[main_loop] currently #Deadlock round: 14 out of 63 rounds, ratio: 0.2222222222222222
+
+
+Ring found:
+35-18509-S 47-18509-U 47-18510-S 35-18510-U 35-18509-S
+[main_loop] currently #Deadlock round: 8 out of 65 rounds, ratio: 0.12307692307692308
+
+
+[main_loop] currently #Deadlock round: 9 out of 67 rounds, ratio: 0.13432835820895522
+
+
+[main_loop] currently #Deadlock round: 9 out of 66 rounds, ratio: 0.13636363636363635
+
+
+[main_loop] currently #Deadlock round: 8 out of 65 rounds, ratio: 0.12307692307692308
+
+
+[main_loop] currently #Deadlock round: 7 out of 66 rounds, ratio: 0.10606060606060606
+
+
+[main_loop] currently #Deadlock round: 9 out of 66 rounds, ratio: 0.13636363636363635
+
+
+Ring found:
+22-11407-U 22-11408-S 30-11408-U 30-11407-S 22-11407-U
+[main_loop] currently #Deadlock round: 12 out of 63 rounds, ratio: 0.19047619047619047
+
+
+[main_loop] currently #Deadlock round: 7 out of 63 rounds, ratio: 0.1111111111111111
+
+
+Ring found:
+58-24172-S 54-24172-U 54-24173-S 58-24173-U 58-24172-S
+[main_loop] currently #Deadlock round: 8 out of 63 rounds, ratio: 0.12698412698412698
+
+
+Ring found:
+26-10819-S 18-10819-U 18-10820-S 26-10820-U 26-10819-S
+[main_loop] currently #Deadlock round: 7 out of 60 rounds, ratio: 0.11666666666666667
+
+
+[main_loop] currently #Deadlock round: 11 out of 65 rounds, ratio: 0.16923076923076924
+
+
+[main_loop] currently #Deadlock round: 10 out of 63 rounds, ratio: 0.15873015873015872
+
+
+Ring found:
+3-6237-S 7-6237-U 7-6236-S 3-6236-U 3-6237-S
+[main_loop] currently #Deadlock round: 16 out of 63 rounds, ratio: 0.25396825396825395
+
+
+[main_loop] currently #Deadlock round: 13 out of 66 rounds, ratio: 0.19696969696969696
+
+
+[main_loop] currently #Deadlock round: 10 out of 65 rounds, ratio: 0.15384615384615385
+
+
+[main_loop] currently #Deadlock round: 13 out of 65 rounds, ratio: 0.2
+
+
+[main_loop] currently #Deadlock round: 5 out of 65 rounds, ratio: 0.07692307692307693
+
+
+[main_loop] currently #Deadlock round: 12 out of 66 rounds, ratio: 0.18181818181818182
+
+
+[main_loop] currently #Deadlock round: 12 out of 67 rounds, ratio: 0.1791044776119403
+
+
+[main_loop] currently #Deadlock round: 5 out of 63 rounds, ratio: 0.07936507936507936
+
+
+[main_loop] currently #Deadlock round: 7 out of 64 rounds, ratio: 0.109375
+
+
+[main_loop] currently #Deadlock round: 6 out of 68 rounds, ratio: 0.08823529411764706
+
+
+[main_loop] currently #Deadlock round: 9 out of 65 rounds, ratio: 0.13846153846153847
+
+
+[main_loop] currently #Deadlock round: 8 out of 60 rounds, ratio: 0.13333333333333333
+
+
+[main_loop] currently #Deadlock round: 10 out of 63 rounds, ratio: 0.15873015873015872
+
+
+[main_loop] currently #Deadlock round: 8 out of 65 rounds, ratio: 0.12307692307692308
+
+
+[main_loop] currently #Deadlock round: 18 out of 67 rounds, ratio: 0.26865671641791045
+
+
+[main_loop] currently #Deadlock round: 7 out of 67 rounds, ratio: 0.1044776119402985
+
+
+[main_loop] currently #Deadlock round: 7 out of 64 rounds, ratio: 0.109375
+
+
+[main_loop] currently #Deadlock round: 10 out of 66 rounds, ratio: 0.15151515151515152
+
+
+[main_loop] currently #Deadlock round: 12 out of 64 rounds, ratio: 0.1875
+
+
+[main_loop] currently #Deadlock round: 9 out of 68 rounds, ratio: 0.1323529411764706
+
+
+[main_loop] currently #Deadlock round: 6 out of 61 rounds, ratio: 0.09836065573770492
+
+
+[main_loop] currently #Deadlock round: 8 out of 64 rounds, ratio: 0.125
+
+
+[main_loop] currently #Deadlock round: 8 out of 63 rounds, ratio: 0.12698412698412698
+
+
+[main_loop] currently #Deadlock round: 10 out of 64 rounds, ratio: 0.15625
+
+
+[main_loop] currently #Deadlock round: 11 out of 64 rounds, ratio: 0.171875
+
+
+[main_loop] currently #Deadlock round: 5 out of 66 rounds, ratio: 0.07575757575757576
+
+
+[main_loop] currently #Deadlock round: 8 out of 66 rounds, ratio: 0.12121212121212122
+
+
+[main_loop] currently #Deadlock round: 11 out of 66 rounds, ratio: 0.16666666666666666
+
+
+[main_loop] currently #Deadlock round: 9 out of 67 rounds, ratio: 0.13432835820895522
+
+
+[main_loop] currently #Deadlock round: 10 out of 66 rounds, ratio: 0.15151515151515152
+
+
+[main_loop] currently #Deadlock round: 8 out of 66 rounds, ratio: 0.12121212121212122
+
+
+Ring found:
+33-16632-S 45-16632-U 45-16631-S 33-16631-U 33-16632-S
+[main_loop] currently #Deadlock round: 8 out of 63 rounds, ratio: 0.12698412698412698
+
+
+[main_loop] currently #Deadlock round: 14 out of 64 rounds, ratio: 0.21875
+
+
+[main_loop] currently #Deadlock round: 12 out of 68 rounds, ratio: 0.17647058823529413
+
+
+[main_loop] currently #Deadlock round: 16 out of 64 rounds, ratio: 0.25
+
+
+[main_loop] currently #Deadlock round: 12 out of 67 rounds, ratio: 0.1791044776119403
+
+
+Ring found:
+0-2116-S 12-2116-U 12-2117-S 0-2117-U 0-2116-S
+[main_loop] currently #Deadlock round: 10 out of 67 rounds, ratio: 0.14925373134328357
+
+
+[main_loop] currently #Deadlock round: 7 out of 64 rounds, ratio: 0.109375
+
+
+Ring found:
+50-23968-S 62-23968-U 62-23966-S 50-23966-U 50-23968-S
+[main_loop] currently #Deadlock round: 9 out of 61 rounds, ratio: 0.14754098360655737
+
+
+[main_loop] currently #Deadlock round: 9 out of 66 rounds, ratio: 0.13636363636363635
+
+
+Ring found:
+20-8701-S 28-8701-U 28-8700-S 20-8700-U 20-8701-S
+[main_loop] currently #Deadlock round: 6 out of 64 rounds, ratio: 0.09375
+
+
+[main_loop] currently #Deadlock round: 7 out of 61 rounds, ratio: 0.11475409836065574
+
+
+[main_loop] currently #Deadlock round: 7 out of 67 rounds, ratio: 0.1044776119402985
+
+
+[main_loop] currently #Deadlock round: 13 out of 67 rounds, ratio: 0.19402985074626866
+
+
+[main_loop] currently #Deadlock round: 10 out of 64 rounds, ratio: 0.15625
+
+
+[main_loop] currently #Deadlock round: 8 out of 66 rounds, ratio: 0.12121212121212122
+
+
+[main_loop] currently #Deadlock round: 7 out of 65 rounds, ratio: 0.1076923076923077
+
+
+[main_loop] currently #Deadlock round: 13 out of 66 rounds, ratio: 0.19696969696969696
+
+
+[main_loop] currently #Deadlock round: 12 out of 65 rounds, ratio: 0.18461538461538463
+
+
+[main_loop] currently #Deadlock round: 7 out of 68 rounds, ratio: 0.10294117647058823
+
+
+[main_loop] currently #Deadlock round: 18 out of 68 rounds, ratio: 0.2647058823529412
+
+
+[main_loop] currently #Deadlock round: 8 out of 67 rounds, ratio: 0.11940298507462686
+
+
+[main_loop] currently #Deadlock round: 11 out of 65 rounds, ratio: 0.16923076923076924
+
+
+[main_loop] currently #Deadlock round: 9 out of 69 rounds, ratio: 0.13043478260869565
+
+
+Ring found:
+1-3823-S 13-3823-U 13-3824-S 1-3824-U 1-3823-S
+[main_loop] currently #Deadlock round: 11 out of 64 rounds, ratio: 0.171875
+
+
+[main_loop] currently #Deadlock round: 8 out of 65 rounds, ratio: 0.12307692307692308
+
+
+[main_loop] currently #Deadlock round: 8 out of 64 rounds, ratio: 0.125
+
+
+[main_loop] currently #Deadlock round: 10 out of 67 rounds, ratio: 0.14925373134328357
+
+
+[main_loop] currently #Deadlock round: 6 out of 62 rounds, ratio: 0.0967741935483871
+
+
+[main_loop] currently #Deadlock round: 10 out of 67 rounds, ratio: 0.14925373134328357
+
+
+[main_loop] currently #Deadlock round: 7 out of 65 rounds, ratio: 0.1076923076923077
+
+
+[main_loop] currently #Deadlock round: 8 out of 67 rounds, ratio: 0.11940298507462686
+
+
+[main_loop] currently #Deadlock round: 11 out of 67 rounds, ratio: 0.16417910447761194
+
+
+[main_loop] currently #Deadlock round: 6 out of 69 rounds, ratio: 0.08695652173913043
+
+
+[main_loop] currently #Deadlock round: 8 out of 64 rounds, ratio: 0.125
+
+
+Ring found:
+34-17901-S 42-17901-U 42-17900-S 34-17900-U 34-17901-S
+[main_loop] currently #Deadlock round: 10 out of 68 rounds, ratio: 0.14705882352941177
+
+
+[main_loop] currently #Deadlock round: 5 out of 67 rounds, ratio: 0.07462686567164178
+
+
+[main_loop] currently #Deadlock round: 12 out of 68 rounds, ratio: 0.17647058823529413
+
+
+[main_loop] currently #Deadlock round: 16 out of 65 rounds, ratio: 0.24615384615384617
+
+
+Ring found:
+31-12443-S 23-12443-U 23-12444-S 31-12444-U 31-12443-S
+[main_loop] currently #Deadlock round: 14 out of 68 rounds, ratio: 0.20588235294117646
+
+
+[main_loop] currently #Deadlock round: 10 out of 65 rounds, ratio: 0.15384615384615385
+
+
+[main_loop] currently #Deadlock round: 14 out of 65 rounds, ratio: 0.2153846153846154
+
+
+Ring found:
+0-2658-S 12-2658-U 12-2657-S 0-2657-U 0-2658-S
+[main_loop] currently #Deadlock round: 10 out of 67 rounds, ratio: 0.14925373134328357
+
+
+[main_loop] currently #Deadlock round: 9 out of 62 rounds, ratio: 0.14516129032258066
+
+
+[main_loop] currently #Deadlock round: 12 out of 66 rounds, ratio: 0.18181818181818182
+
+
+[main_loop] currently #Deadlock round: 12 out of 69 rounds, ratio: 0.17391304347826086
+
+
+[main_loop] currently #Deadlock round: 6 out of 65 rounds, ratio: 0.09230769230769231
+
+
+[main_loop] currently #Deadlock round: 7 out of 62 rounds, ratio: 0.11290322580645161
+
+
+[main_loop] currently #Deadlock round: 7 out of 66 rounds, ratio: 0.10606060606060606
+
+
+[main_loop] currently #Deadlock round: 8 out of 67 rounds, ratio: 0.11940298507462686
+
+
+[main_loop] currently #Deadlock round: 10 out of 65 rounds, ratio: 0.15384615384615385
+
+
+[main_loop] currently #Deadlock round: 8 out of 68 rounds, ratio: 0.11764705882352941
+
+
+[main_loop] currently #Deadlock round: 13 out of 67 rounds, ratio: 0.19402985074626866
+
+
+[main_loop] currently #Deadlock round: 7 out of 65 rounds, ratio: 0.1076923076923077
+
+
+Ring found:
+48-21378-S 52-21378-U 52-21379-S 48-21379-U 48-21378-S
+[main_loop] currently #Deadlock round: 11 out of 68 rounds, ratio: 0.16176470588235295
+
+
+[main_loop] currently #Deadlock round: 18 out of 69 rounds, ratio: 0.2608695652173913
+
+
+[main_loop] currently #Deadlock round: 10 out of 68 rounds, ratio: 0.14705882352941177
+
+
+[main_loop] currently #Deadlock round: 7 out of 69 rounds, ratio: 0.10144927536231885
+
+
+[main_loop] currently #Deadlock round: 11 out of 65 rounds, ratio: 0.16923076923076924
+
+
+[main_loop] currently #Deadlock round: 8 out of 65 rounds, ratio: 0.12307692307692308
+
+
+Ring found:
+59-25492-S 63-25492-U 63-25493-S 59-25493-U 59-25492-S
+[main_loop] currently #Deadlock round: 12 out of 68 rounds, ratio: 0.17647058823529413
+
+
+Ring found:
+16-9191-S 28-9191-U 28-9192-S 16-9192-U 16-9191-S
+[main_loop] currently #Deadlock round: 9 out of 68 rounds, ratio: 0.1323529411764706
+
+
+[main_loop] currently #Deadlock round: 6 out of 63 rounds, ratio: 0.09523809523809523
+
+
+Ring found:
+50-23927-S 54-23927-U 54-23926-S 50-23926-U 50-23927-S
+[main_loop] currently #Deadlock round: 12 out of 66 rounds, ratio: 0.18181818181818182
+
+
+[main_loop] currently #Deadlock round: 6 out of 70 rounds, ratio: 0.08571428571428572
+
+
+Ring found:
+25-10349-S 21-10349-U 21-10348-S 25-10348-U 25-10349-S
+[main_loop] currently #Deadlock round: 8 out of 66 rounds, ratio: 0.12121212121212122
+
+
+[main_loop] currently #Deadlock round: 7 out of 68 rounds, ratio: 0.10294117647058823
+
+
+[main_loop] currently #Deadlock round: 14 out of 66 rounds, ratio: 0.21212121212121213
+
+
+[main_loop] currently #Deadlock round: 8 out of 66 rounds, ratio: 0.12121212121212122
+
+
+[main_loop] currently #Deadlock round: 10 out of 69 rounds, ratio: 0.14492753623188406
+
+
+Ring found:
+9-3577-S 5-3577-U 5-3578-S 9-3578-U 9-3577-S
+[main_loop] currently #Deadlock round: 11 out of 68 rounds, ratio: 0.16176470588235295
+
+
+[main_loop] currently #Deadlock round: 12 out of 69 rounds, ratio: 0.17391304347826086
+
+
+[main_loop] currently #Deadlock round: 10 out of 68 rounds, ratio: 0.14705882352941177
+
+
+[main_loop] currently #Deadlock round: 9 out of 70 rounds, ratio: 0.12857142857142856
+
+
+[main_loop] currently #Deadlock round: 16 out of 66 rounds, ratio: 0.24242424242424243
+
+
+[main_loop] currently #Deadlock round: 5 out of 68 rounds, ratio: 0.07352941176470588
+
+
+[main_loop] currently #Deadlock round: 10 out of 66 rounds, ratio: 0.15151515151515152
+
+
+[main_loop] currently #Deadlock round: 9 out of 63 rounds, ratio: 0.14285714285714285
+
+
+[main_loop] currently #Deadlock round: 14 out of 69 rounds, ratio: 0.2028985507246377
+
+
+[main_loop] currently #Deadlock round: 8 out of 65 rounds, ratio: 0.12307692307692308
+
+
+[main_loop] currently #Deadlock round: 6 out of 66 rounds, ratio: 0.09090909090909091
+
+
+Ring found:
+35-18435-S 47-18435-U 47-18436-S 35-18436-U 35-18435-S
+[main_loop] currently #Deadlock round: 8 out of 63 rounds, ratio: 0.12698412698412698
+
+
+[main_loop] currently #Deadlock round: 8 out of 68 rounds, ratio: 0.11764705882352941
+
+
+[main_loop] currently #Deadlock round: 12 out of 70 rounds, ratio: 0.17142857142857143
+
+
+[main_loop] currently #Deadlock round: 18 out of 70 rounds, ratio: 0.2571428571428571
+
+
+[main_loop] currently #Deadlock round: 7 out of 67 rounds, ratio: 0.1044776119402985
+
+
+[main_loop] currently #Deadlock round: 10 out of 69 rounds, ratio: 0.14492753623188406
+
+
+[main_loop] currently #Deadlock round: 12 out of 67 rounds, ratio: 0.1791044776119403
+
+
+[main_loop] currently #Deadlock round: 13 out of 68 rounds, ratio: 0.19117647058823528
+
+
+Ring found:
+19-12287-S 23-12287-U 23-12286-S 19-12286-U 19-12287-S
+[main_loop] currently #Deadlock round: 8 out of 66 rounds, ratio: 0.12121212121212122
+
+
+[main_loop] currently #Deadlock round: 9 out of 69 rounds, ratio: 0.13043478260869565
+
+
+[main_loop] currently #Deadlock round: 8 out of 69 rounds, ratio: 0.11594202898550725
+
+
+[main_loop] currently #Deadlock round: 11 out of 69 rounds, ratio: 0.15942028985507245
+
+
+Ring found:
+9-3866-S 13-3866-U 13-3867-S 9-3867-U 9-3866-S
+[main_loop] currently #Deadlock round: 11 out of 70 rounds, ratio: 0.15714285714285714
+
+
+[main_loop] currently #Deadlock round: 10 out of 66 rounds, ratio: 0.15151515151515152
+
+
+[main_loop] currently #Deadlock round: 11 out of 66 rounds, ratio: 0.16666666666666666
+
+
+[main_loop] currently #Deadlock round: 7 out of 70 rounds, ratio: 0.1
+
+
+[main_loop] currently #Deadlock round: 12 out of 69 rounds, ratio: 0.17391304347826086
+
+
+[main_loop] currently #Deadlock round: 6 out of 64 rounds, ratio: 0.09375
+
+
+[main_loop] currently #Deadlock round: 14 out of 67 rounds, ratio: 0.208955223880597
+
+
+[main_loop] currently #Deadlock round: 8 out of 66 rounds, ratio: 0.12121212121212122
+
+
+[main_loop] currently #Deadlock round: 10 out of 67 rounds, ratio: 0.14925373134328357
+
+
+[main_loop] currently #Deadlock round: 12 out of 67 rounds, ratio: 0.1791044776119403
+
+
+[main_loop] currently #Deadlock round: 16 out of 67 rounds, ratio: 0.23880597014925373
+
+
+[main_loop] currently #Deadlock round: 9 out of 64 rounds, ratio: 0.140625
+
+
+Ring found:
+24-7514-S 26-7514-U 26-7513-S 24-7513-U 24-7514-S
+[main_loop] currently #Deadlock round: 13 out of 68 rounds, ratio: 0.19117647058823528
+
+
+[main_loop] currently #Deadlock round: 11 out of 69 rounds, ratio: 0.15942028985507245
+
+
+Ring found:
+35-18517-S 47-18517-U 47-18516-S 35-18516-U 35-18517-S
+[main_loop] currently #Deadlock round: 9 out of 66 rounds, ratio: 0.13636363636363635
+
+
+[main_loop] currently #Deadlock round: 8 out of 67 rounds, ratio: 0.11940298507462686
+
+
+Ring found:
+0-2138-S 4-2138-U 4-2139-S 0-2139-U 0-2138-S
+[main_loop] currently #Deadlock round: 11 out of 69 rounds, ratio: 0.15942028985507245
+
+
+[main_loop] currently #Deadlock round: 7 out of 69 rounds, ratio: 0.10144927536231885
+
+
+[main_loop] currently #Deadlock round: 5 out of 69 rounds, ratio: 0.07246376811594203
+
+
+Ring found:
+41-16575-S 45-16575-U 45-16576-S 41-16576-U 41-16575-S
+[main_loop] currently #Deadlock round: 9 out of 69 rounds, ratio: 0.13043478260869565
+
+
+Ring found:
+2-5141-S 14-5141-U 14-5140-S 2-5140-U 2-5141-S
+[main_loop] currently #Deadlock round: 9 out of 67 rounds, ratio: 0.13432835820895522
+
+
+[main_loop] currently #Deadlock round: 11 out of 71 rounds, ratio: 0.15492957746478872
+
+
+[main_loop] currently #Deadlock round: 9 out of 71 rounds, ratio: 0.1267605633802817
+
+
+Ring found:
+10-5117-S 6-5117-U 6-5118-S 10-5118-U 10-5117-S
+[main_loop] currently #Deadlock round: 9 out of 64 rounds, ratio: 0.140625
+
+
+[main_loop] currently #Deadlock round: 6 out of 67 rounds, ratio: 0.08955223880597014
+
+
+[main_loop] currently #Deadlock round: 8 out of 70 rounds, ratio: 0.11428571428571428
+
+
+[main_loop] currently #Deadlock round: 14 out of 70 rounds, ratio: 0.2
+
+
+[main_loop] currently #Deadlock round: 6 out of 71 rounds, ratio: 0.08450704225352113
+
+
+[main_loop] currently #Deadlock round: 7 out of 71 rounds, ratio: 0.09859154929577464
+
+
+Ring found:
+56-21803-S 48-21803-U 48-21804-S 56-21804-U 56-21803-S
+[main_loop] currently #Deadlock round: 9 out of 67 rounds, ratio: 0.13432835820895522
+
+
+[main_loop] currently #Deadlock round: 7 out of 68 rounds, ratio: 0.10294117647058823
+
+
+[main_loop] currently #Deadlock round: 11 out of 70 rounds, ratio: 0.15714285714285714
+
+
+[main_loop] currently #Deadlock round: 12 out of 71 rounds, ratio: 0.16901408450704225
+
+
+[main_loop] currently #Deadlock round: 9 out of 70 rounds, ratio: 0.12857142857142856
+
+
+[main_loop] currently #Deadlock round: 12 out of 70 rounds, ratio: 0.17142857142857143
+
+
+Ring found:
+35-18457-S 47-18457-U 47-18458-S 35-18458-U 35-18457-S
+[main_loop] currently #Deadlock round: 12 out of 67 rounds, ratio: 0.1791044776119403
+
+
+[main_loop] currently #Deadlock round: 18 out of 71 rounds, ratio: 0.2535211267605634
+
+
+[main_loop] currently #Deadlock round: 9 out of 67 rounds, ratio: 0.13432835820895522
+
+
+[main_loop] currently #Deadlock round: 10 out of 70 rounds, ratio: 0.14285714285714285
+
+
+[main_loop] currently #Deadlock round: 10 out of 68 rounds, ratio: 0.14705882352941177
+
+
+[main_loop] currently #Deadlock round: 13 out of 69 rounds, ratio: 0.18840579710144928
+
+
+[main_loop] currently #Deadlock round: 12 out of 70 rounds, ratio: 0.17142857142857143
+
+
+[main_loop] currently #Deadlock round: 10 out of 67 rounds, ratio: 0.14925373134328357
+
+
+[main_loop] currently #Deadlock round: 7 out of 70 rounds, ratio: 0.1
+
+
+Ring found:
+32-14826-S 40-14826-U 40-14825-S 32-14825-U 32-14826-S
+[main_loop] currently #Deadlock round: 10 out of 68 rounds, ratio: 0.14705882352941177
+
+
+[main_loop] currently #Deadlock round: 13 out of 69 rounds, ratio: 0.18840579710144928
+
+
+[main_loop] currently #Deadlock round: 16 out of 68 rounds, ratio: 0.23529411764705882
+
+
+[main_loop] currently #Deadlock round: 11 out of 70 rounds, ratio: 0.15714285714285714
+
+
+Ring found:
+35-18938-S 39-18938-U 39-18937-S 35-18937-U 35-18938-S
+[main_loop] currently #Deadlock round: 13 out of 68 rounds, ratio: 0.19117647058823528
+
+
+[main_loop] currently #Deadlock round: 11 out of 70 rounds, ratio: 0.15714285714285714
+
+
+[main_loop] currently #Deadlock round: 6 out of 65 rounds, ratio: 0.09230769230769231
+
+
+[main_loop] currently #Deadlock round: 5 out of 70 rounds, ratio: 0.07142857142857142
+
+
+[main_loop] currently #Deadlock round: 8 out of 67 rounds, ratio: 0.11940298507462686
+
+
+Ring found:
+63-24883-S 55-24883-U 55-24884-S 63-24884-U 63-24883-S
+[main_loop] currently #Deadlock round: 15 out of 71 rounds, ratio: 0.2112676056338028
+
+
+[main_loop] currently #Deadlock round: 8 out of 68 rounds, ratio: 0.11764705882352941
+
+
+[main_loop] currently #Deadlock round: 9 out of 65 rounds, ratio: 0.13846153846153847
+
+
+[main_loop] currently #Deadlock round: 14 out of 68 rounds, ratio: 0.20588235294117646
+
+
+[main_loop] currently #Deadlock round: 9 out of 70 rounds, ratio: 0.12857142857142856
+
+
+[main_loop] currently #Deadlock round: 9 out of 65 rounds, ratio: 0.13846153846153847
+
+
+[main_loop] currently #Deadlock round: 11 out of 72 rounds, ratio: 0.1527777777777778
+
+
+[main_loop] currently #Deadlock round: 9 out of 68 rounds, ratio: 0.1323529411764706
+
+
+Ring found:
+12-1971-S 4-1971-U 4-1972-S 12-1972-U 12-1971-S
+[main_loop] currently #Deadlock round: 10 out of 68 rounds, ratio: 0.14705882352941177
+
+
+[main_loop] currently #Deadlock round: 10 out of 68 rounds, ratio: 0.14705882352941177
+
+
+[main_loop] currently #Deadlock round: 12 out of 68 rounds, ratio: 0.17647058823529413
+
+
+Ring found:
+50-23833-S 62-23833-U 62-23834-S 50-23834-U 50-23833-S
+[main_loop] currently #Deadlock round: 9 out of 71 rounds, ratio: 0.1267605633802817
+
+
+[main_loop] currently #Deadlock round: 9 out of 72 rounds, ratio: 0.125
+
+
+Ring found:
+26-11456-S 30-11456-U 30-11455-S 26-11455-U 26-11456-S
+[main_loop] currently #Deadlock round: 8 out of 69 rounds, ratio: 0.11594202898550725
+
+
+[main_loop] currently #Deadlock round: 6 out of 72 rounds, ratio: 0.08333333333333333
+
+
+[main_loop] currently #Deadlock round: 11 out of 71 rounds, ratio: 0.15492957746478872
+
+
+Ring found:
+58-23986-S 54-23986-U 54-23987-S 58-23987-U 58-23986-S
+[main_loop] currently #Deadlock round: 8 out of 72 rounds, ratio: 0.1111111111111111
+
+
+[main_loop] currently #Deadlock round: 10 out of 69 rounds, ratio: 0.14492753623188406
+
+
+[main_loop] currently #Deadlock round: 6 out of 68 rounds, ratio: 0.08823529411764706
+
+
+[main_loop] currently #Deadlock round: 9 out of 71 rounds, ratio: 0.1267605633802817
+
+
+[main_loop] currently #Deadlock round: 12 out of 72 rounds, ratio: 0.16666666666666666
+
+
+[main_loop] currently #Deadlock round: 18 out of 72 rounds, ratio: 0.25
+
+
+Ring found:
+2-5126-S 6-5126-U 6-5127-S 2-5127-U 2-5126-S
+[main_loop] currently #Deadlock round: 14 out of 70 rounds, ratio: 0.2
+
+
+[main_loop] currently #Deadlock round: 12 out of 71 rounds, ratio: 0.16901408450704225
+
+
+[main_loop] currently #Deadlock round: 10 out of 69 rounds, ratio: 0.14492753623188406
+
+
+[main_loop] currently #Deadlock round: 12 out of 71 rounds, ratio: 0.16901408450704225
+
+
+[main_loop] currently #Deadlock round: 7 out of 71 rounds, ratio: 0.09859154929577464
+
+
+[main_loop] currently #Deadlock round: 13 out of 70 rounds, ratio: 0.18571428571428572
+
+
+[main_loop] currently #Deadlock round: 16 out of 69 rounds, ratio: 0.2318840579710145
+
+
+[main_loop] currently #Deadlock round: 15 out of 72 rounds, ratio: 0.20833333333333334
+
+
+[main_loop] currently #Deadlock round: 10 out of 71 rounds, ratio: 0.14084507042253522
+
+
+[main_loop] currently #Deadlock round: 5 out of 71 rounds, ratio: 0.07042253521126761
+
+
+[main_loop] currently #Deadlock round: 11 out of 71 rounds, ratio: 0.15492957746478872
+
+
+Ring found:
+14-4713-S 6-4713-U 6-4712-S 14-4712-U 14-4713-S
+[main_loop] currently #Deadlock round: 15 out of 69 rounds, ratio: 0.21739130434782608
+
+
+[main_loop] currently #Deadlock round: 11 out of 71 rounds, ratio: 0.15492957746478872
+
+
+[main_loop] currently #Deadlock round: 8 out of 68 rounds, ratio: 0.11764705882352941
+
+
+[main_loop] currently #Deadlock round: 6 out of 66 rounds, ratio: 0.09090909090909091
+
+
+[main_loop] currently #Deadlock round: 10 out of 69 rounds, ratio: 0.14492753623188406
+
+
+[main_loop] currently #Deadlock round: 11 out of 72 rounds, ratio: 0.1527777777777778
+
+
+[main_loop] currently #Deadlock round: 12 out of 69 rounds, ratio: 0.17391304347826086
+
+
+[main_loop] currently #Deadlock round: 9 out of 69 rounds, ratio: 0.13043478260869565
+
+
+[main_loop] currently #Deadlock round: 6 out of 73 rounds, ratio: 0.0821917808219178
+
+
+[main_loop] currently #Deadlock round: 8 out of 69 rounds, ratio: 0.11594202898550725
+
+
+[main_loop] currently #Deadlock round: 10 out of 69 rounds, ratio: 0.14492753623188406
+
+
+[main_loop] currently #Deadlock round: 9 out of 71 rounds, ratio: 0.1267605633802817
+
+
+[main_loop] currently #Deadlock round: 9 out of 66 rounds, ratio: 0.13636363636363635
+
+
+[main_loop] currently #Deadlock round: 8 out of 73 rounds, ratio: 0.1095890410958904
+
+
+[main_loop] currently #Deadlock round: 13 out of 69 rounds, ratio: 0.18840579710144928
+
+
+[main_loop] currently #Deadlock round: 9 out of 72 rounds, ratio: 0.125
+
+
+[main_loop] currently #Deadlock round: 9 out of 66 rounds, ratio: 0.13636363636363635
+
+
+[main_loop] currently #Deadlock round: 7 out of 72 rounds, ratio: 0.09722222222222222
+
+
+[main_loop] currently #Deadlock round: 11 out of 73 rounds, ratio: 0.1506849315068493
+
+
+Ring found:
+27-12460-S 19-12460-U 19-12461-S 27-12461-U 27-12460-S
+[main_loop] currently #Deadlock round: 7 out of 69 rounds, ratio: 0.10144927536231885
+
+
+[main_loop] currently #Deadlock round: 9 out of 72 rounds, ratio: 0.125
+
+
+[main_loop] currently #Deadlock round: 18 out of 73 rounds, ratio: 0.2465753424657534
+
+
+[main_loop] currently #Deadlock round: 10 out of 70 rounds, ratio: 0.14285714285714285
+
+
+[main_loop] currently #Deadlock round: 11 out of 72 rounds, ratio: 0.1527777777777778
+
+
+Ring found:
+32-15328-S 36-15328-U 36-15327-S 32-15327-U 32-15328-S
+[main_loop] currently #Deadlock round: 11 out of 70 rounds, ratio: 0.15714285714285714
+
+
+[main_loop] currently #Deadlock round: 12 out of 72 rounds, ratio: 0.16666666666666666
+
+
+[main_loop] currently #Deadlock round: 13 out of 71 rounds, ratio: 0.18309859154929578
+
+
+[main_loop] currently #Deadlock round: 8 out of 70 rounds, ratio: 0.11428571428571428
+
+
+[main_loop] currently #Deadlock round: 9 out of 73 rounds, ratio: 0.1232876712328767
+
+
+[main_loop] currently #Deadlock round: 10 out of 72 rounds, ratio: 0.1388888888888889
+
+
+[main_loop] currently #Deadlock round: 11 out of 72 rounds, ratio: 0.1527777777777778
+
+
+[main_loop] currently #Deadlock round: 16 out of 70 rounds, ratio: 0.22857142857142856
+
+
+[main_loop] currently #Deadlock round: 5 out of 72 rounds, ratio: 0.06944444444444445
+
+
+[main_loop] currently #Deadlock round: 12 out of 72 rounds, ratio: 0.16666666666666666
+
+
+[main_loop] currently #Deadlock round: 11 out of 73 rounds, ratio: 0.1506849315068493
+
+
+[main_loop] currently #Deadlock round: 12 out of 73 rounds, ratio: 0.1643835616438356
+
+
+[main_loop] currently #Deadlock round: 15 out of 73 rounds, ratio: 0.2054794520547945
+
+
+[main_loop] currently #Deadlock round: 10 out of 70 rounds, ratio: 0.14285714285714285
+
+
+[main_loop] currently #Deadlock round: 14 out of 71 rounds, ratio: 0.19718309859154928
+
+
+[main_loop] currently #Deadlock round: 12 out of 70 rounds, ratio: 0.17142857142857143
+
+
+[main_loop] currently #Deadlock round: 15 out of 70 rounds, ratio: 0.21428571428571427
+
+
+Ring found:
+49-22646-S 61-22646-U 61-22647-S 49-22647-U 49-22646-S
+[main_loop] currently #Deadlock round: 9 out of 70 rounds, ratio: 0.12857142857142856
+
+
+[main_loop] currently #Deadlock round: 8 out of 69 rounds, ratio: 0.11594202898550725
+
+
+[main_loop] currently #Deadlock round: 13 out of 70 rounds, ratio: 0.18571428571428572
+
+
+[main_loop] currently #Deadlock round: 10 out of 70 rounds, ratio: 0.14285714285714285
+
+
+[main_loop] currently #Deadlock round: 9 out of 73 rounds, ratio: 0.1232876712328767
+
+
+[main_loop] currently #Deadlock round: 6 out of 74 rounds, ratio: 0.08108108108108109
+
+
+[main_loop] currently #Deadlock round: 9 out of 70 rounds, ratio: 0.12857142857142856
+
+
+[main_loop] currently #Deadlock round: 13 out of 72 rounds, ratio: 0.18055555555555555
+
+
+[main_loop] currently #Deadlock round: 9 out of 67 rounds, ratio: 0.13432835820895522
+
+
+Ring found:
+37-16225-S 45-16225-U 45-16226-S 37-16226-U 37-16225-S
+[main_loop] currently #Deadlock round: 8 out of 73 rounds, ratio: 0.1095890410958904
+
+
+[main_loop] currently #Deadlock round: 9 out of 67 rounds, ratio: 0.13432835820895522
+
+
+[main_loop] currently #Deadlock round: 8 out of 74 rounds, ratio: 0.10810810810810811
+
+
+[main_loop] currently #Deadlock round: 7 out of 70 rounds, ratio: 0.1
+
+
+[main_loop] currently #Deadlock round: 10 out of 71 rounds, ratio: 0.14084507042253522
+
+
+[main_loop] currently #Deadlock round: 11 out of 74 rounds, ratio: 0.14864864864864866
+
+
+[main_loop] currently #Deadlock round: 12 out of 73 rounds, ratio: 0.1643835616438356
+
+
+[main_loop] currently #Deadlock round: 18 out of 74 rounds, ratio: 0.24324324324324326
+
+
+[main_loop] currently #Deadlock round: 11 out of 71 rounds, ratio: 0.15492957746478872
+
+
+[main_loop] currently #Deadlock round: 6 out of 67 rounds, ratio: 0.08955223880597014
+
+
+[main_loop] currently #Deadlock round: 9 out of 73 rounds, ratio: 0.1232876712328767
+
+
+[main_loop] currently #Deadlock round: 11 out of 73 rounds, ratio: 0.1506849315068493
+
+
+Ring found:
+49-22959-S 53-22959-U 53-22960-S 49-22960-U 49-22959-S
+[main_loop] currently #Deadlock round: 17 out of 71 rounds, ratio: 0.23943661971830985
+
+
+[main_loop] currently #Deadlock round: 11 out of 73 rounds, ratio: 0.1506849315068493
+
+
+[main_loop] currently #Deadlock round: 5 out of 73 rounds, ratio: 0.0684931506849315
+
+
+[main_loop] currently #Deadlock round: 9 out of 72 rounds, ratio: 0.125
+
+
+[main_loop] currently #Deadlock round: 11 out of 74 rounds, ratio: 0.14864864864864866
+
+
+[main_loop] currently #Deadlock round: 9 out of 74 rounds, ratio: 0.12162162162162163
+
+
+[main_loop] currently #Deadlock round: 10 out of 73 rounds, ratio: 0.136986301369863
+
+
+[main_loop] currently #Deadlock round: 12 out of 74 rounds, ratio: 0.16216216216216217
+
+
+[main_loop] currently #Deadlock round: 8 out of 71 rounds, ratio: 0.11267605633802817
+
+
+[main_loop] currently #Deadlock round: 12 out of 71 rounds, ratio: 0.16901408450704225
+
+
+[main_loop] currently #Deadlock round: 8 out of 70 rounds, ratio: 0.11428571428571428
+
+
+[main_loop] currently #Deadlock round: 9 out of 71 rounds, ratio: 0.1267605633802817
+
+
+[main_loop] currently #Deadlock round: 10 out of 71 rounds, ratio: 0.14084507042253522
+
+
+[main_loop] currently #Deadlock round: 9 out of 74 rounds, ratio: 0.12162162162162163
+
+
+Ring found:
+34-17785-S 38-17785-U 38-17784-S 34-17784-U 34-17785-S
+[main_loop] currently #Deadlock round: 13 out of 73 rounds, ratio: 0.1780821917808219
+
+
+[main_loop] currently #Deadlock round: 13 out of 71 rounds, ratio: 0.18309859154929578
+
+
+[main_loop] currently #Deadlock round: 8 out of 74 rounds, ratio: 0.10810810810810811
+
+
+Ring found:
+33-12962-S 34-12962-U 34-12961-S 33-12961-U 33-12962-S
+[main_loop] currently #Deadlock round: 10 out of 72 rounds, ratio: 0.1388888888888889
+
+
+[main_loop] currently #Deadlock round: 13 out of 73 rounds, ratio: 0.1780821917808219
+
+
+[main_loop] currently #Deadlock round: 9 out of 71 rounds, ratio: 0.1267605633802817
+
+
+[main_loop] currently #Deadlock round: 10 out of 71 rounds, ratio: 0.14084507042253522
+
+
+[main_loop] currently #Deadlock round: 7 out of 71 rounds, ratio: 0.09859154929577464
+
+
+[main_loop] currently #Deadlock round: 6 out of 75 rounds, ratio: 0.08
+
+
+[main_loop] currently #Deadlock round: 11 out of 72 rounds, ratio: 0.1527777777777778
+
+
+Ring found:
+45-16281-S 37-16281-U 37-16282-S 45-16282-U 45-16281-S
+[main_loop] currently #Deadlock round: 16 out of 71 rounds, ratio: 0.22535211267605634
+
+
+[main_loop] currently #Deadlock round: 12 out of 74 rounds, ratio: 0.16216216216216217
+
+
+[main_loop] currently #Deadlock round: 17 out of 72 rounds, ratio: 0.2361111111111111
+
+
+Ring found:
+56-21540-S 52-21540-U 52-21539-S 56-21539-U 56-21540-S
+[main_loop] currently #Deadlock round: 16 out of 74 rounds, ratio: 0.21621621621621623
+
+
+[main_loop] currently #Deadlock round: 14 out of 72 rounds, ratio: 0.19444444444444445
+
+
+[main_loop] currently #Deadlock round: 11 out of 75 rounds, ratio: 0.14666666666666667
+
+
+[main_loop] currently #Deadlock round: 6 out of 68 rounds, ratio: 0.08823529411764706
+
+
+[main_loop] currently #Deadlock round: 10 out of 72 rounds, ratio: 0.1388888888888889
+
+
+[main_loop] currently #Deadlock round: 8 out of 75 rounds, ratio: 0.10666666666666667
+
+
+[main_loop] currently #Deadlock round: 9 out of 74 rounds, ratio: 0.12162162162162163
+
+
+[main_loop] currently #Deadlock round: 18 out of 75 rounds, ratio: 0.24
+
+
+[main_loop] currently #Deadlock round: 11 out of 74 rounds, ratio: 0.14864864864864866
+
+
+[main_loop] currently #Deadlock round: 9 out of 68 rounds, ratio: 0.1323529411764706
+
+
+[main_loop] currently #Deadlock round: 9 out of 73 rounds, ratio: 0.1232876712328767
+
+
+[main_loop] currently #Deadlock round: 9 out of 68 rounds, ratio: 0.1323529411764706
+
+
+[main_loop] currently #Deadlock round: 13 out of 74 rounds, ratio: 0.17567567567567569
+
+
+[main_loop] currently #Deadlock round: 7 out of 72 rounds, ratio: 0.09722222222222222
+
+
+Ring found:
+0-2563-S 12-2563-U 12-2564-S 0-2564-U 0-2563-S
+[main_loop] currently #Deadlock round: 9 out of 72 rounds, ratio: 0.125
+
+
+[main_loop] currently #Deadlock round: 11 out of 74 rounds, ratio: 0.14864864864864866
+
+
+[main_loop] currently #Deadlock round: 9 out of 75 rounds, ratio: 0.12
+
+
+[main_loop] currently #Deadlock round: 11 out of 75 rounds, ratio: 0.14666666666666667
+
+
+[main_loop] currently #Deadlock round: 5 out of 74 rounds, ratio: 0.06756756756756757
+
+
+[main_loop] currently #Deadlock round: 12 out of 72 rounds, ratio: 0.16666666666666666
+
+
+Ring found:
+56-21646-S 60-21646-U 60-21645-S 56-21645-U 56-21646-S
+[main_loop] currently #Deadlock round: 12 out of 76 rounds, ratio: 0.15789473684210525
+
+
+[main_loop] currently #Deadlock round: 13 out of 72 rounds, ratio: 0.18055555555555555
+
+
+Ring found:
+17-9920-S 29-9920-U 29-9921-S 17-9921-U 17-9920-S
+[main_loop] currently #Deadlock round: 7 out of 76 rounds, ratio: 0.09210526315789473
+
+
+[main_loop] currently #Deadlock round: 10 out of 74 rounds, ratio: 0.13513513513513514
+
+
+[main_loop] currently #Deadlock round: 9 out of 75 rounds, ratio: 0.12
+
+
+Ring found:
+49-22583-S 57-22583-U 57-22582-S 49-22582-U 49-22583-S
+[main_loop] currently #Deadlock round: 9 out of 75 rounds, ratio: 0.12
+
+
+[main_loop] currently #Deadlock round: 14 out of 73 rounds, ratio: 0.1917808219178082
+
+
+[main_loop] currently #Deadlock round: 12 out of 75 rounds, ratio: 0.16
+
+
+[main_loop] currently #Deadlock round: 8 out of 71 rounds, ratio: 0.11267605633802817
+
+
+[main_loop] currently #Deadlock round: 10 out of 72 rounds, ratio: 0.1388888888888889
+
+
+[main_loop] currently #Deadlock round: 12 out of 75 rounds, ratio: 0.16
+
+
+[main_loop] currently #Deadlock round: 13 out of 74 rounds, ratio: 0.17567567567567569
+
+
+[main_loop] currently #Deadlock round: 10 out of 73 rounds, ratio: 0.136986301369863
+
+
+Ring found:
+26-10993-S 22-10993-U 22-10992-S 26-10992-U 26-10993-S
+[main_loop] currently #Deadlock round: 12 out of 73 rounds, ratio: 0.1643835616438356
+
+
+[main_loop] currently #Deadlock round: 16 out of 75 rounds, ratio: 0.21333333333333335
+
+
+[main_loop] currently #Deadlock round: 9 out of 72 rounds, ratio: 0.125
+
+
+[main_loop] currently #Deadlock round: 8 out of 76 rounds, ratio: 0.10526315789473684
+
+
+[main_loop] currently #Deadlock round: 10 out of 72 rounds, ratio: 0.1388888888888889
+
+
+[main_loop] currently #Deadlock round: 6 out of 69 rounds, ratio: 0.08695652173913043
+
+
+Ring found:
+56-21614-S 52-21614-U 52-21615-S 56-21615-U 56-21614-S
+[main_loop] currently #Deadlock round: 12 out of 75 rounds, ratio: 0.16
+
+
+[main_loop] currently #Deadlock round: 9 out of 74 rounds, ratio: 0.12162162162162163
+
+
+[main_loop] currently #Deadlock round: 17 out of 73 rounds, ratio: 0.2328767123287671
+
+
+[main_loop] currently #Deadlock round: 10 out of 73 rounds, ratio: 0.136986301369863
+
+
+[main_loop] currently #Deadlock round: 9 out of 75 rounds, ratio: 0.12
+
+
+[main_loop] currently #Deadlock round: 16 out of 72 rounds, ratio: 0.2222222222222222
+
+
+[main_loop] currently #Deadlock round: 9 out of 69 rounds, ratio: 0.13043478260869565
+
+
+[main_loop] currently #Deadlock round: 18 out of 76 rounds, ratio: 0.23684210526315788
+
+
+[main_loop] currently #Deadlock round: 10 out of 75 rounds, ratio: 0.13333333333333333
+
+
+[main_loop] currently #Deadlock round: 12 out of 76 rounds, ratio: 0.15789473684210525
+
+
+[main_loop] currently #Deadlock round: 13 out of 75 rounds, ratio: 0.17333333333333334
+
+
+[main_loop] currently #Deadlock round: 7 out of 73 rounds, ratio: 0.0958904109589041
+
+
+[main_loop] currently #Deadlock round: 9 out of 76 rounds, ratio: 0.11842105263157894
+
+
+[main_loop] currently #Deadlock round: 5 out of 75 rounds, ratio: 0.06666666666666667
+
+
+[main_loop] currently #Deadlock round: 9 out of 73 rounds, ratio: 0.1232876712328767
+
+
+[main_loop] currently #Deadlock round: 9 out of 76 rounds, ratio: 0.11842105263157894
+
+
+Ring found:
+49-23112-S 53-23112-U 53-23113-S 49-23113-U 49-23112-S
+[main_loop] currently #Deadlock round: 15 out of 74 rounds, ratio: 0.20270270270270271
+
+
+Ring found:
+32-14901-S 36-14901-U 36-14900-S 32-14900-U 32-14901-S
+[main_loop] currently #Deadlock round: 13 out of 73 rounds, ratio: 0.1780821917808219
+
+
+[main_loop] currently #Deadlock round: 9 out of 76 rounds, ratio: 0.11842105263157894
+
+
+[main_loop] currently #Deadlock round: 11 out of 76 rounds, ratio: 0.14473684210526316
+
+
+Ring found:
+11-5778-S 3-5778-U 3-5779-S 11-5779-U 11-5778-S
+[main_loop] currently #Deadlock round: 10 out of 69 rounds, ratio: 0.14492753623188406
+
+
+[main_loop] currently #Deadlock round: 13 out of 75 rounds, ratio: 0.17333333333333334
+
+
+Ring found:
+10-4912-S 6-4912-U 6-4911-S 10-4911-U 10-4912-S
+[main_loop] currently #Deadlock round: 9 out of 72 rounds, ratio: 0.125
+
+
+[main_loop] currently #Deadlock round: 11 out of 75 rounds, ratio: 0.14666666666666667
+
+
+[main_loop] currently #Deadlock round: 9 out of 73 rounds, ratio: 0.1232876712328767
+
+
+[main_loop] currently #Deadlock round: 12 out of 76 rounds, ratio: 0.15789473684210525
+
+
+[main_loop] currently #Deadlock round: 7 out of 77 rounds, ratio: 0.09090909090909091
+
+
+[main_loop] currently #Deadlock round: 10 out of 73 rounds, ratio: 0.136986301369863
+
+
+[main_loop] currently #Deadlock round: 9 out of 75 rounds, ratio: 0.12
+
+
+[main_loop] currently #Deadlock round: 12 out of 77 rounds, ratio: 0.15584415584415584
+
+
+[main_loop] currently #Deadlock round: 16 out of 76 rounds, ratio: 0.21052631578947367
+
+
+[main_loop] currently #Deadlock round: 12 out of 74 rounds, ratio: 0.16216216216216217
+
+
+Ring found:
+59-25141-S 55-25141-U 55-25142-S 59-25142-U 59-25141-S
+[main_loop] currently #Deadlock round: 13 out of 76 rounds, ratio: 0.17105263157894737
+
+
+[main_loop] currently #Deadlock round: 10 out of 73 rounds, ratio: 0.136986301369863
+
+
+[main_loop] currently #Deadlock round: 9 out of 76 rounds, ratio: 0.11842105263157894
+
+
+[main_loop] currently #Deadlock round: 16 out of 73 rounds, ratio: 0.2191780821917808
+
+
+[main_loop] currently #Deadlock round: 18 out of 77 rounds, ratio: 0.23376623376623376
+
+
+Ring found:
+42-17583-S 38-17583-U 38-17584-S 42-17584-U 42-17583-S
+[main_loop] currently #Deadlock round: 14 out of 73 rounds, ratio: 0.1917808219178082
+
+
+[main_loop] currently #Deadlock round: 10 out of 74 rounds, ratio: 0.13513513513513514
+
+
+[main_loop] currently #Deadlock round: 10 out of 74 rounds, ratio: 0.13513513513513514
+
+
+[main_loop] currently #Deadlock round: 8 out of 77 rounds, ratio: 0.1038961038961039
+
+
+Ring found:
+59-25137-S 63-25137-U 63-25138-S 59-25138-U 59-25137-S
+[main_loop] currently #Deadlock round: 7 out of 70 rounds, ratio: 0.1
+
+
+[main_loop] currently #Deadlock round: 12 out of 77 rounds, ratio: 0.15584415584415584
+
+
+Ring found:
+43-19028-S 47-19028-U 47-19029-S 43-19029-U 43-19028-S
+[main_loop] currently #Deadlock round: 18 out of 74 rounds, ratio: 0.24324324324324326
+
+
+[main_loop] currently #Deadlock round: 7 out of 74 rounds, ratio: 0.0945945945945946
+
+
+[main_loop] currently #Deadlock round: 13 out of 74 rounds, ratio: 0.17567567567567569
+
+
+[main_loop] currently #Deadlock round: 9 out of 70 rounds, ratio: 0.12857142857142856
+
+
+[main_loop] currently #Deadlock round: 9 out of 77 rounds, ratio: 0.11688311688311688
+
+
+[main_loop] currently #Deadlock round: 12 out of 77 rounds, ratio: 0.15584415584415584
+
+
+[main_loop] currently #Deadlock round: 9 out of 73 rounds, ratio: 0.1232876712328767
+
+
+[main_loop] currently #Deadlock round: 9 out of 77 rounds, ratio: 0.11688311688311688
+
+
+[main_loop] currently #Deadlock round: 10 out of 76 rounds, ratio: 0.13157894736842105
+
+
+[main_loop] currently #Deadlock round: 13 out of 76 rounds, ratio: 0.17105263157894737
+
+
+[main_loop] currently #Deadlock round: 10 out of 74 rounds, ratio: 0.13513513513513514
+
+
+[main_loop] currently #Deadlock round: 11 out of 77 rounds, ratio: 0.14285714285714285
+
+
+[main_loop] currently #Deadlock round: 13 out of 76 rounds, ratio: 0.17105263157894737
+
+
+[main_loop] currently #Deadlock round: 10 out of 70 rounds, ratio: 0.14285714285714285
+
+
+[main_loop] currently #Deadlock round: 9 out of 77 rounds, ratio: 0.11688311688311688
+
+
+[main_loop] currently #Deadlock round: 10 out of 74 rounds, ratio: 0.13513513513513514
+
+
+Ring found:
+53-23046-S 61-23046-U 61-23047-S 53-23047-U 53-23046-S
+[main_loop] currently #Deadlock round: 6 out of 76 rounds, ratio: 0.07894736842105263
+
+
+[main_loop] currently #Deadlock round: 7 out of 78 rounds, ratio: 0.08974358974358974
+
+
+[main_loop] currently #Deadlock round: 12 out of 78 rounds, ratio: 0.15384615384615385
+
+
+[main_loop] currently #Deadlock round: 11 out of 76 rounds, ratio: 0.14473684210526316
+
+
+Ring found:
+9-3937-S 1-3937-U 1-3938-S 9-3938-U 9-3937-S
+[main_loop] currently #Deadlock round: 16 out of 75 rounds, ratio: 0.21333333333333335
+
+
+[main_loop] currently #Deadlock round: 14 out of 74 rounds, ratio: 0.1891891891891892
+
+
+Ring found:
+41-16260-S 33-16260-U 33-16261-S 41-16261-U 41-16260-S
+[main_loop] currently #Deadlock round: 13 out of 78 rounds, ratio: 0.16666666666666666
+
+
+Ring found:
+1-3576-S 13-3576-U 13-3575-S 1-3575-U 1-3576-S
+[main_loop] currently #Deadlock round: 10 out of 77 rounds, ratio: 0.12987012987012986
+
+
+[main_loop] currently #Deadlock round: 16 out of 77 rounds, ratio: 0.2077922077922078
+
+
+Ring found:
+32-15243-S 36-15243-U 36-15244-S 32-15244-U 32-15243-S
+[main_loop] currently #Deadlock round: 10 out of 74 rounds, ratio: 0.13513513513513514
+
+
+[main_loop] currently #Deadlock round: 16 out of 74 rounds, ratio: 0.21621621621621623
+
+
+[main_loop] currently #Deadlock round: 12 out of 75 rounds, ratio: 0.16
+
+
+[main_loop] currently #Deadlock round: 9 out of 76 rounds, ratio: 0.11842105263157894
+
+
+[main_loop] currently #Deadlock round: 9 out of 74 rounds, ratio: 0.12162162162162163
+
+
+[main_loop] currently #Deadlock round: 10 out of 75 rounds, ratio: 0.13333333333333333
+
+
+[main_loop] currently #Deadlock round: 18 out of 75 rounds, ratio: 0.24
+
+
+[main_loop] currently #Deadlock round: 8 out of 78 rounds, ratio: 0.10256410256410256
+
+
+Ring found:
+10-4658-S 6-4658-U 6-4659-S 10-4659-U 10-4658-S
+[main_loop] currently #Deadlock round: 10 out of 71 rounds, ratio: 0.14084507042253522
+
+
+[main_loop] currently #Deadlock round: 7 out of 79 rounds, ratio: 0.08860759493670886
+
+
+[main_loop] currently #Deadlock round: 18 out of 78 rounds, ratio: 0.23076923076923078
+
+
+[main_loop] currently #Deadlock round: 7 out of 71 rounds, ratio: 0.09859154929577464
+
+
+[main_loop] currently #Deadlock round: 10 out of 75 rounds, ratio: 0.13333333333333333
+
+
+[main_loop] currently #Deadlock round: 16 out of 76 rounds, ratio: 0.21052631578947367
+
+
+[main_loop] currently #Deadlock round: 13 out of 77 rounds, ratio: 0.16883116883116883
+
+
+Ring found:
+47-19145-S 39-19145-U 39-19144-S 47-19144-U 47-19145-S
+[main_loop] currently #Deadlock round: 10 out of 74 rounds, ratio: 0.13513513513513514
+
+
+[main_loop] currently #Deadlock round: 10 out of 75 rounds, ratio: 0.13333333333333333
+
+
+[main_loop] currently #Deadlock round: 10 out of 77 rounds, ratio: 0.12987012987012986
+
+
+[main_loop] currently #Deadlock round: 13 out of 75 rounds, ratio: 0.17333333333333334
+
+
+[main_loop] currently #Deadlock round: 7 out of 75 rounds, ratio: 0.09333333333333334
+
+
+Ring found:
+57-22826-S 61-22826-U 61-22827-S 57-22827-U 57-22826-S
+[main_loop] currently #Deadlock round: 14 out of 77 rounds, ratio: 0.18181818181818182
+
+
+[main_loop] currently #Deadlock round: 10 out of 71 rounds, ratio: 0.14084507042253522
+
+
+[main_loop] currently #Deadlock round: 13 out of 79 rounds, ratio: 0.16455696202531644
+
+
+Ring found:
+20-8943-U 20-8944-S 28-8944-U 28-8943-S 20-8943-U
+[main_loop] currently #Deadlock round: 11 out of 75 rounds, ratio: 0.14666666666666667
+
+
+[main_loop] currently #Deadlock round: 9 out of 78 rounds, ratio: 0.11538461538461539
+
+
+[main_loop] currently #Deadlock round: 12 out of 79 rounds, ratio: 0.1518987341772152
+
+
+[main_loop] currently #Deadlock round: 10 out of 75 rounds, ratio: 0.13333333333333333
+
+
+[main_loop] currently #Deadlock round: 9 out of 77 rounds, ratio: 0.11688311688311688
+
+
+[main_loop] currently #Deadlock round: 14 out of 75 rounds, ratio: 0.18666666666666668
+
+
+[main_loop] currently #Deadlock round: 11 out of 78 rounds, ratio: 0.14102564102564102
+
+
+[main_loop] currently #Deadlock round: 16 out of 78 rounds, ratio: 0.20512820512820512
+
+
+[main_loop] currently #Deadlock round: 6 out of 77 rounds, ratio: 0.07792207792207792
+
+
+[main_loop] currently #Deadlock round: 9 out of 78 rounds, ratio: 0.11538461538461539
+
+
+[main_loop] currently #Deadlock round: 16 out of 75 rounds, ratio: 0.21333333333333335
+
+
+[main_loop] currently #Deadlock round: 13 out of 77 rounds, ratio: 0.16883116883116883
+
+
+[main_loop] currently #Deadlock round: 9 out of 78 rounds, ratio: 0.11538461538461539
+
+
+[main_loop] currently #Deadlock round: 10 out of 78 rounds, ratio: 0.1282051282051282
+
+
+[main_loop] currently #Deadlock round: 11 out of 77 rounds, ratio: 0.14285714285714285
+
+
+[main_loop] currently #Deadlock round: 12 out of 78 rounds, ratio: 0.15384615384615385
+
+
+[main_loop] currently #Deadlock round: 10 out of 72 rounds, ratio: 0.1388888888888889
+
+
+[main_loop] currently #Deadlock round: 7 out of 80 rounds, ratio: 0.0875
+
+
+[main_loop] currently #Deadlock round: 13 out of 76 rounds, ratio: 0.17105263157894737
+
+
+[main_loop] currently #Deadlock round: 9 out of 75 rounds, ratio: 0.12
+
+
+[main_loop] currently #Deadlock round: 8 out of 79 rounds, ratio: 0.10126582278481013
+
+
+[main_loop] currently #Deadlock round: 16 out of 77 rounds, ratio: 0.2077922077922078
+
+
+[main_loop] currently #Deadlock round: 13 out of 80 rounds, ratio: 0.1625
+
+
+[main_loop] currently #Deadlock round: 12 out of 76 rounds, ratio: 0.15789473684210525
+
+
+[main_loop] currently #Deadlock round: 10 out of 78 rounds, ratio: 0.1282051282051282
+
+
+[main_loop] currently #Deadlock round: 7 out of 72 rounds, ratio: 0.09722222222222222
+
+
+[main_loop] currently #Deadlock round: 18 out of 76 rounds, ratio: 0.23684210526315788
+
+
+[main_loop] currently #Deadlock round: 18 out of 79 rounds, ratio: 0.22784810126582278
+
+
+[main_loop] currently #Deadlock round: 10 out of 76 rounds, ratio: 0.13157894736842105
+
+
+[main_loop] currently #Deadlock round: 7 out of 76 rounds, ratio: 0.09210526315789473
+
+
+Ring found:
+7-5880-U 7-5881-S 11-5881-U 11-5880-S 7-5880-U
+[main_loop] currently #Deadlock round: 11 out of 76 rounds, ratio: 0.14473684210526316
+
+
+[main_loop] currently #Deadlock round: 11 out of 76 rounds, ratio: 0.14473684210526316
+
+
+[main_loop] currently #Deadlock round: 13 out of 78 rounds, ratio: 0.16666666666666666
+
+
+[main_loop] currently #Deadlock round: 16 out of 79 rounds, ratio: 0.20253164556962025
+
+
+[main_loop] currently #Deadlock round: 10 out of 75 rounds, ratio: 0.13333333333333333
+
+
+[main_loop] currently #Deadlock round: 11 out of 79 rounds, ratio: 0.13924050632911392
+
+
+[main_loop] currently #Deadlock round: 14 out of 78 rounds, ratio: 0.1794871794871795
+
+
+[main_loop] currently #Deadlock round: 10 out of 72 rounds, ratio: 0.1388888888888889
+
+
+Ring found:
+55-25225-S 63-25225-U 63-25226-S 55-25226-U 55-25225-S
+[main_loop] currently #Deadlock round: 10 out of 78 rounds, ratio: 0.1282051282051282
+
+
+[main_loop] currently #Deadlock round: 10 out of 76 rounds, ratio: 0.13157894736842105
+
+
+[main_loop] currently #Deadlock round: 10 out of 76 rounds, ratio: 0.13157894736842105
+
+
+[main_loop] currently #Deadlock round: 14 out of 76 rounds, ratio: 0.18421052631578946
+
+
+[main_loop] currently #Deadlock round: 12 out of 80 rounds, ratio: 0.15
+
+
+[main_loop] currently #Deadlock round: 9 out of 79 rounds, ratio: 0.11392405063291139
+
+
+[main_loop] currently #Deadlock round: 6 out of 78 rounds, ratio: 0.07692307692307693
+
+
+[main_loop] currently #Deadlock round: 11 out of 78 rounds, ratio: 0.14102564102564102
+
+
+Ring found:
+41-16563-S 45-16563-U 45-16564-S 41-16564-U 41-16563-S
+[main_loop] currently #Deadlock round: 14 out of 78 rounds, ratio: 0.1794871794871795
+
+
+[main_loop] currently #Deadlock round: 9 out of 79 rounds, ratio: 0.11392405063291139
+
+
+[main_loop] currently #Deadlock round: 10 out of 73 rounds, ratio: 0.136986301369863
+
+
+[main_loop] currently #Deadlock round: 9 out of 76 rounds, ratio: 0.11842105263157894
+
+
+[main_loop] currently #Deadlock round: 13 out of 77 rounds, ratio: 0.16883116883116883
+
+
+[main_loop] currently #Deadlock round: 16 out of 76 rounds, ratio: 0.21052631578947367
+
+
+[main_loop] currently #Deadlock round: 7 out of 81 rounds, ratio: 0.08641975308641975
+
+
+[main_loop] currently #Deadlock round: 13 out of 81 rounds, ratio: 0.16049382716049382
+
+
+Ring found:
+49-23005-S 53-23005-U 53-23004-S 49-23004-U 49-23005-S
+[main_loop] currently #Deadlock round: 10 out of 79 rounds, ratio: 0.12658227848101267
+
+
+[main_loop] currently #Deadlock round: 12 out of 77 rounds, ratio: 0.15584415584415584
+
+
+[main_loop] currently #Deadlock round: 10 out of 79 rounds, ratio: 0.12658227848101267
+
+
+[main_loop] currently #Deadlock round: 14 out of 79 rounds, ratio: 0.17721518987341772
+
+

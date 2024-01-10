@@ -122,13 +122,19 @@ class StreamWithSyncGPU(GPU):
                 print(f"[{currentframe().f_code.co_name}] Round {round_id} GPU {self.gpu_id} submit sync", flush=True)
 
             if self.global_gpu_coll_set.global_update_after_submit_sync(self.gpu_id):  # 判断hang
-                final_ret = 1
+                final_ret = 1  # 这个返回值其实没啥用
                 self.is_hang = True
 
-            if self.global_gpu_coll_set.global_check_deadlock(round_id):
-                if PRINT_DEADLOCK_DETAIL:
-                    self.print_deadlock_info(round_id)
-                return -1  # 如果有死锁，直接返回，不用再循环了。
+            if self.is_hang:  # 只有这个GPU提交sync之后hang了，才有必要检查死锁。
+
+                # result = self.global_gpu_coll_set.global_check_deadlock_by_ring(round_id)
+
+                result = self.global_gpu_coll_set.global_check_deadlock_by_intersection(round_id, self.gpu_id)
+
+                if result:
+                    if PRINT_DEADLOCK_DETAIL:
+                        self.print_deadlock_info(round_id)
+                    return -1  # 如果有死锁，直接返回，不用再循环了。
             
             return final_ret
         else:
@@ -139,6 +145,12 @@ class StreamWithSyncGPU(GPU):
                 print(f"[{currentframe().f_code.co_name}] Round {round_id} GPU {self.gpu_id} submit coll {decided_coll} to Group {self.coll_2_group[decided_coll].group_id}", flush=True)
             ret = self.coll_2_group[decided_coll].submit(self.gpu_id, decided_coll, round_id)
             assert ret != 1, "提交coll不会导致hang"
+
+            # 在提交coll之后判断exceed_deadlock
+            if self.global_gpu_coll_set.global_check_exceed_deadlock(round_id):
+                if PRINT_DEADLOCK_DETAIL:
+                    self.print_deadlock_info(round_id)
+                return -1
             
             return ret
 
@@ -267,7 +279,7 @@ class GlobalGPUCollSet:
         self.hang_gpus = new_hang_gpus
 
         if PRINT_MAIN_LOOP:
-            print(f"[{currentframe().f_code.co_name}] Round {round_id} coll {coll_id} done, udpate hang_gpus: {self.hang_gpus}", flush=True)
+            print(f"[{currentframe().f_code.co_name}] Round {round_id} coll {coll_id} done, udpated hang_gpus: {self.hang_gpus}", flush=True)
             self.print_coll_list_for_hang_gpus()
         
     
@@ -275,7 +287,7 @@ class GlobalGPUCollSet:
         if len(self.submitted_undone_colls_from_gpu[gpu_id]) > 0:
             self.hang_gpus.add(gpu_id)
             if PRINT_MAIN_LOOP:
-                print(f"[{currentframe().f_code.co_name}] issue sync, udpate hang_gpus: {self.hang_gpus}", flush=True)
+                print(f"[{currentframe().f_code.co_name}] issue sync, udpated hang_gpus: {self.hang_gpus}", flush=True)
                 self.print_coll_list_for_hang_gpus()
             return True
         else:
@@ -288,8 +300,8 @@ class GlobalGPUCollSet:
         print(f"[{currentframe().f_code.co_name}] Round {round_id}, Group {self.group_id} coll_graph: ", flush=True)
         pprint.pprint(coll_graph)
 
-    def global_check_deadlock(self, round_id) -> bool:
-
+    def global_check_exceed_deadlock(self, round_id) -> bool:
+        
         if self.resource_limit > 0:
             # 判断资源限制的死锁，还是在每个group的范畴内判断，不能全局搞。
             for group_id in range(self.num_groups):
@@ -305,6 +317,32 @@ class GlobalGPUCollSet:
                         print(f"[{currentframe().f_code.co_name}] gpu {check_gpu_id} has {len(self.submitted_undone_colls_from_gpu[check_gpu_id])} submitted undone colls: {self.submitted_undone_colls_from_gpu[check_gpu_id]}", flush=True)
                     print("=========================================")
                     return True
+    
+
+    def global_check_deadlock_by_intersection(self, round_id, new_hang_gpu_id) -> bool:
+        if len(self.hang_gpus) >= 2:
+            assert new_hang_gpu_id in self.hang_gpus, f"gpu {new_hang_gpu_id} 不在hang_gpus中"
+
+            # 判断死锁：
+            submitted_undone_colls_of_new_hang_gpu = self.submitted_undone_colls_from_gpu[new_hang_gpu_id]
+            unsubmitted_colls_of_new_hang_gpu = self.unsubmitted_colls_from_gpu[new_hang_gpu_id]
+
+            submitted_undone_colls_of_other_hang_gpus = set()
+            unsubmitted_colls_of_other_hang_gpus = set()
+            for hang_gpu_id in self.hang_gpus:
+                if hang_gpu_id == new_hang_gpu_id:
+                    continue
+                submitted_undone_colls_of_other_hang_gpus = submitted_undone_colls_of_other_hang_gpus.union(self.submitted_undone_colls_from_gpu[hang_gpu_id])
+                unsubmitted_colls_of_other_hang_gpus = unsubmitted_colls_of_other_hang_gpus.union(self.unsubmitted_colls_from_gpu[hang_gpu_id])
+
+            result = len(submitted_undone_colls_of_new_hang_gpu.intersection(unsubmitted_colls_of_other_hang_gpus)) > 0 and len(unsubmitted_colls_of_new_hang_gpu.intersection(submitted_undone_colls_of_other_hang_gpus)) > 0
+
+            if result:
+                print(f"[{currentframe().f_code.co_name}] ring deadlock when GPU {new_hang_gpu_id} hang. its s_len: {len(submitted_undone_colls_of_new_hang_gpu)}, its u_len: {len(unsubmitted_colls_of_new_hang_gpu)} this s->other u: {submitted_undone_colls_of_new_hang_gpu.intersection(unsubmitted_colls_of_other_hang_gpus)}, this u -> other s: {unsubmitted_colls_of_new_hang_gpu.intersection(submitted_undone_colls_of_other_hang_gpus)}", flush=True)
+            return result
+        return False
+
+    def global_check_deadlock_by_ring(self, round_id) -> bool:
                 
         if len(self.hang_gpus) >= 2:  # bug here. 之前写成了>2，导致死锁检测不出来。
                 # 判断死锁：
@@ -376,15 +414,6 @@ class StreamWithSyncGroup(Group):
 
             if self.coll_submit_counter[coll_id] == 0:
                 self.global_gpu_coll_set.global_update_after_coll_done(coll_id, round_id)
-
-
-        else:  # 提交sync
-
-
-            if self.global_gpu_coll_set.global_check_deadlock(round_id):
-                ret = -1
-                if PRINT_DEADLOCK_DETAIL:
-                    self.print_deadlock_info(round_id)
 
         return ret        
 
