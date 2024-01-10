@@ -3,7 +3,7 @@
   "fix_seed": 0,
   "disorder_prob": 0.01,
   "sync_prob": 0.01,
-  "resource_limit": 15,
+  "resource_limit": -1,
   "model": "StreamWithSync",
   "grouping_policy": "Megatron",
   "tp_group_size": 4,

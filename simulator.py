@@ -312,7 +312,7 @@ class GlobalGPUCollSet:
                         break
                 if all_full_deadlock:
                     print("=========================================")
-                    print(f"[{currentframe().f_code.co_name}] group {group_id} all gpus exceed resource limit {self.resource_limit}", flush=True)
+                    print(f"[{currentframe().f_code.co_name}] group {group_id} all gpus exceed resource limit deadlock {self.resource_limit}", flush=True)
                     for check_gpu_id in self.gpu_per_group[group_id]:
                         print(f"[{currentframe().f_code.co_name}] gpu {check_gpu_id} has {len(self.submitted_undone_colls_from_gpu[check_gpu_id])} submitted undone colls: {self.submitted_undone_colls_from_gpu[check_gpu_id]}", flush=True)
                     print("=========================================")
@@ -598,6 +598,8 @@ def all_gpu_submit_done(gpus):
 
 def main_loop(gpus, groups, total_rounds, sum_deadlock_rounds, lock, global_gpu_coll_set):
     deadlock_counter = 0
+    
+    proc = current_process()
     for round_id in range(total_rounds):
         if PRINT_MAIN_LOOP:
             print(f"[{currentframe().f_code.co_name}] Round {round_id}", flush=True)
@@ -638,11 +640,10 @@ def main_loop(gpus, groups, total_rounds, sum_deadlock_rounds, lock, global_gpu_
                 break
         
         if PRINT_ROUND_REPORT:
-            print(f"[{currentframe().f_code.co_name}] currently #Deadlock round: {deadlock_counter} out of {round_id + 1} rounds, ratio: {deadlock_counter / (round_id + 1)}\n\n", flush=True)
+            print(f"[{currentframe().f_code.co_name}] Process {proc.pid} currently #Deadlock round: {deadlock_counter} out of {round_id + 1} rounds, ratio: {deadlock_counter / (round_id + 1)}\n\n", flush=True)
     
     with lock:
         sum_deadlock_rounds.value += deadlock_counter
-    proc = current_process()
 
     print(f"[{currentframe().f_code.co_name}] \n\n~~~Process {proc.pid} #Deadlock round: {deadlock_counter} out of {total_rounds} rounds, ratio: {deadlock_counter / total_rounds}", flush=True)
 

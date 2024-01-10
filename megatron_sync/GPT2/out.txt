@@ -1,0 +1,1262 @@
+
+
+================
+Start
+================
+
+
+10620
+10621
+10622
+10623
+10624
+10625
+10627
+10629
+10630
+10631
+10632
+10633
+10634
+10636
+10637
+10638
+10639
+10642
+10643
+10644
+10645
+10647
+10648
+10649
+10651
+10655
+10656
+10657
+10658
+10660
+10661
+10664
+[<module>] start 32 processes, each 10 rounds
+
+
+[init_7_main_loop] Process 10634 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10624 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10623 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10625 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10638 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10637 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10620 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10622 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10655 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10656 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10639 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10657 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] Process 10658 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10629 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10631 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10633 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10664 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10651 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10621 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10661 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10643 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10627 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10642 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10636 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10660 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10632 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10648 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10644 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10630 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10647 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10649 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10645 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[init_7_main_loop] Process 10655 before main loop
+[init_7_main_loop] Process 10624 before main loop
+[init_7_main_loop] Process 10656 before main loop
+[init_7_main_loop] Process 10648 before main loop
+[init_7_main_loop] Process 10658 before main loop
+[init_7_main_loop] Process 10631 before main loop
+[init_7_main_loop] Process 10627 before main loop
+[init_7_main_loop] Process 10623 before main loop
+[init_7_main_loop] Process 10642 before main loop
+[init_7_main_loop] Process 10661 before main loop
+[init_7_main_loop] Process 10633 before main loop
+[init_7_main_loop] Process 10649 before main loop
+[init_7_main_loop] Process 10620 before main loop
+[init_7_main_loop] Process 10644 before main loop
+[init_7_main_loop] Process 10621 before main loop
+[init_7_main_loop] Process 10625 before main loop
+[init_7_main_loop] Process 10657 before main loop
+[init_7_main_loop] Process 10637 before main loop
+[init_7_main_loop] Process 10639 before main loop
+[init_7_main_loop] Process 10629 before main loop
+[init_7_main_loop] Process 10636 before main loop
+[init_7_main_loop] Process 10632 before main loop
+[init_7_main_loop] Process 10622 before main loop
+[init_7_main_loop] Process 10647 before main loop
+[init_7_main_loop] Process 10638 before main loop
+[init_7_main_loop] Process 10664 before main loop
+[init_7_main_loop] Process 10634 before main loop
+[init_7_main_loop] Process 10660 before main loop
+[init_7_main_loop] Process 10651 before main loop
+[init_7_main_loop] Process 10630 before main loop
+[init_7_main_loop] Process 10645 before main loop
+[init_7_main_loop] Process 10643 before main loop
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 1 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 2 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 3 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 4 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 5 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 6 rounds, ratio: 0.0
+
+
+[global_check_deadlock_by_intersection] ring deadlock when GPU 1679 hang. its s_len: 1, its u_len: 430 this s->other u: {419570}, this u -> other s: {419569}
+[main_loop] currently #Deadlock round: 1 out of 7 rounds, ratio: 0.14285714285714285
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 7 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 1 out of 8 rounds, ratio: 0.125
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 8 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 1 out of 9 rounds, ratio: 0.1111111111111111
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 0 out of 9 rounds, ratio: 0.0
+
+
+[main_loop] currently #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+
+
+[main_loop] 
+
+~~~Process 10642 #Deadlock round: 1 out of 10 rounds, ratio: 0.1
+[init_7_main_loop] Process 10642 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10638 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10638 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10645 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10645 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10622 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10622 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10632 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10632 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10649 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10649 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10634 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10634 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10643 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10643 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10655 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10655 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10633 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10633 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10629 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10629 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10627 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10627 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10651 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10651 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10623 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10623 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10624 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10624 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10625 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10625 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10658 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10658 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10647 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10647 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10631 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10631 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10657 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10657 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10621 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10621 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10636 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10636 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10656 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10656 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10639 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10639 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10664 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10664 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10661 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10661 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10644 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10644 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10620 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10620 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10630 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10630 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10648 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10648 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10637 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10637 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[main_loop] currently #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+
+
+[main_loop] 
+
+~~~Process 10660 #Deadlock round: 0 out of 10 rounds, ratio: 0.0
+[init_7_main_loop] Process 10660 model: StreamWithSync, gropuing_policy: Megatron gpu_num: 3072, group_num: 896, coll_num: 768000, disorder_prob: 0.0005, sync_prob: 0.0005, resource_limit: -1
+[init_7_main_loop] tp_group_size: 8, dp_group_size: 6, pp_group_size: 64, coll_cnt_per_tp_group: 400, coll_cnt_per_dp_group: 1200
+[<module>] 
+================
+Summary: #Deadlock round: 1 out of 320 rounds, ratio: 0.003125
