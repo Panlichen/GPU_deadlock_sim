@@ -263,7 +263,7 @@ class GlobalGPUCollSet:
         new_hang_gpus = set()
         for hang_gpu_id in self.hang_gpus:
             if len(self.submitted_undone_colls_from_gpu[hang_gpu_id]) > 0:
-                new_hang_gpus.add(hang_gpu_id)
+                new_hang_gpus.add(hang_gpu_id)  # bugfix: 之前写成了new_hang_gpus.add(gpu_id)
         self.hang_gpus = new_hang_gpus
 
         if PRINT_MAIN_LOOP:
@@ -299,7 +299,11 @@ class GlobalGPUCollSet:
                         all_full_deadlock = False
                         break
                 if all_full_deadlock:
-                    print(f"[{currentframe().f_code.co_name}] all gpus exceed resource limit {self.resource_limit}", flush=True)
+                    print("=========================================")
+                    print(f"[{currentframe().f_code.co_name}] group {group_id} all gpus exceed resource limit {self.resource_limit}", flush=True)
+                    for check_gpu_id in self.gpu_per_group[group_id]:
+                        print(f"[{currentframe().f_code.co_name}] gpu {check_gpu_id} has {len(self.submitted_undone_colls_from_gpu[check_gpu_id])} submitted undone colls: {self.submitted_undone_colls_from_gpu[check_gpu_id]}", flush=True)
+                    print("=========================================")
                     return True
                 
         if len(self.hang_gpus) >= 2:  # bug here. 之前写成了>2，导致死锁检测不出来。
@@ -536,9 +540,11 @@ def dispatch_coll_2_gpu(gpu_per_group, coll_per_group):
                     coll_per_gpu[gpu_id].append(sub_coll_list[index])
     #===================================================
 
-    if PRINT_PARSE_RAW:
-        for gpu_id in coll_per_gpu:
-            print(f"[{currentframe().f_code.co_name}] gpu {gpu_id} has colls: {coll_per_gpu[gpu_id]}", flush=True)
+    # if PRINT_PARSE_RAW:
+    #     for gpu_id in coll_per_gpu:
+    #         print(f"[{currentframe().f_code.co_name}] gpu {gpu_id} has colls: {coll_per_gpu[gpu_id]}", flush=True)
+    # for gpu_id in coll_per_gpu:
+    #     print(f"[{currentframe().f_code.co_name}] gpu {gpu_id} has colls: {coll_per_gpu[gpu_id]}", flush=True)
     
     return coll_per_gpu
         

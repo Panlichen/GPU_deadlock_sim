@@ -2,11 +2,11 @@
   "total_rounds": 100,
   "fix_seed": 0,
   "gpu_num": 64,
-  "disorder_prob": 0.00001,
-  "sync_prob": 0.00001,
+  "disorder_prob": 0.001,
+  "sync_prob": 0.001,
   "model": "StreamWithSync",
   "grouping_policy": "Arbitrary",
-  "resource_limit": 80,
+  "resource_limit": 15,
   "group_num": 32,
   "gpu_per_group": [
     [0,1,24],
@@ -80,5 +80,5 @@
     1200
   ],
 
-  "num_process": 32
+  "num_process": 10
 }

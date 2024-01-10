@@ -23,7 +23,7 @@ import pprint
 
 PRINT_RING = True
 PRINT_DEBUG = False
-PRINT_PERFORMANCE = True
+PRINT_PERFORMANCE = False
 
 class RingDetector:
     def __init__(self) -> None:
