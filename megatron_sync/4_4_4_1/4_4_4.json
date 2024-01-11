@@ -1,8 +1,8 @@
 {
   "total_rounds": 100,
   "fix_seed": 0,
-  "disorder_prob": 0.004,
-  "sync_prob": 0.004,
+  "disorder_prob": 0.008,
+  "sync_prob": 0.008,
   "resource_limit": -1,
   "model": "StreamWithSync",
   "grouping_policy": "Megatron",
